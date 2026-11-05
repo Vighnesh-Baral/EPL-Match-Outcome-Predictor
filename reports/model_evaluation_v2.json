@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "sklearn_version": "1.9.1",
+    "xgboost_version": "3.4.1",
+    "model_name": "Random Forest",
+    "ensemble_name": "Random Forest + Poisson",
+    "ml_probability_weight": 0.7000000000000001,
+    "poisson_probability_weight": 0.29999999999999993,
+    "feature_columns": [
+      "home_form5_ppm",
+      "away_form5_ppm",
+      "home_season_ppm",
+      "away_season_ppm",
+      "home_season_gf_pm",
+      "away_season_gf_pm",
+      "home_season_ga_pm",
+      "away_season_ga_pm",
+      "home_season_win_rate",
+      "away_season_win_rate",
+      "home_matches_played",
+      "away_matches_played",
+      "h2h_home_ppm_10",
+      "h2h_home_goal_diff_10",
+      "h2h_matches_10",
+      "league_avg_team_goals"
+    ],
+    "training_matches": 4181,
+    "training_start": "2015-08-08",
+    "training_end": "2026-09-19",
+    "training_seasons": [
+      "2015-16",
+      "2016-17",
+      "2017-18",
+      "2018-19",
+      "2019-20",
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26",
+      "2026-27"
+    ],
+    "season_sample_weights": {
+      "2015-16": 0.25,
+      "2016-17": 0.27,
+      "2017-18": 0.29,
+      "2018-19": 0.31,
+      "2019-20": 0.35,
+      "2020-21": 0.45,
+      "2021-22": 0.5,
+      "2022-23": 0.58,
+      "2023-24": 0.72,
+      "2024-25": 0.86,
+      "2025-26": 1.0,
+      "2026-27": 1.15
+    },
+    "validation_period": [
+      "2022-23",
+      "2023-24"
+    ],
+    "test_period": [
+      "2024-25",
+      "2025-26"
+    ],
+    "validation_best_blend_log_loss": 0.9698506084605072,
+    "test_metrics": [
+      {
+        "model": "Poisson baseline",
+        "accuracy": 0.4776315789473684,
+        "log_loss": 1.0803869849079584,
+        "brier_score": 0.639692401920689
+      },
+      {
+        "model": "Random Forest + Poisson blend",
+        "accuracy": 0.4868421052631579,
+        "log_loss": 1.023292151967913,
+        "brier_score": 0.6150696460370987
+      },
+      {
+        "model": "Random Forest",
+        "accuracy": 0.5,
+        "log_loss": 1.0272096938441324,
+        "brier_score": 0.6167723589015007
+      }
+    ],
+    "historical_current_season_matches": 1,
+    "home_advantage_factor": 1.06,
+    "disclaimer": "Historical backtest is not proof of 2026/27 performance. The current-season team/FPL adjustment is a new snapshot input and needs prospective validation as 2026/27 match results accrue."
+  },
+  "validation_comparison": [
+    {
+      "model": "Logistic Regression",
+      "validation_samples": 760,
+      "validation_ml_log_loss": 0.9769023727610292,
+      "validation_blend_log_loss": 0.9747645258911055,
+      "blend_ml_weight": 0.8,
+      "validation_accuracy": 0.5355263157894737,
+      "validation_log_loss": 0.9747645258911055,
+      "validation_brier_score": 0.5796373822330746
+    },
+    {
+      "model": "Random Forest",
+      "validation_samples": 760,
+      "validation_ml_log_loss": 0.9754071547159452,
+      "validation_blend_log_loss": 0.9698506084605072,
+      "blend_ml_weight": 0.7000000000000001,
+      "validation_accuracy": 0.5526315789473685,
+      "validation_log_loss": 0.9698506084605072,
+      "validation_brier_score": 0.575396158735012
+    },
+    {
+      "model": "XGBoost",
+      "validation_samples": 760,
+      "validation_ml_log_loss": 1.016873940246087,
+      "validation_blend_log_loss": 0.9898830569303871,
+      "blend_ml_weight": 0.45,
+      "validation_accuracy": 0.5223684210526316,
+      "validation_log_loss": 0.9898830569303871,
+      "validation_brier_score": 0.5879845097736557
+    },
+    {
+      "model": "Poisson baseline",
+      "validation_samples": 760,
+      "validation_ml_log_loss": null,
+      "validation_blend_log_loss": 1.0179336692859282,
+      "blend_ml_weight": 0.0,
+      "validation_accuracy": 0.5197368421052632,
+      "validation_log_loss": 1.0179336692859282,
+      "validation_brier_score": 0.6023186789904527
+    }
+  ],
+  "test_comparison": [
+    {
+      "model": "Poisson baseline",
+      "accuracy": 0.4776315789473684,
+      "log_loss": 1.0803869849079584,
+      "brier_score": 0.639692401920689
+    },
+    {
+      "model": "Random Forest + Poisson blend",
+      "accuracy": 0.4868421052631579,
+      "log_loss": 1.023292151967913,
+      "brier_score": 0.6150696460370987
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.5,
+      "log_loss": 1.0272096938441324,
+      "brier_score": 0.6167723589015007
+    }
+  ]
+}

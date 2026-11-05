@@ -1,0 +1,671 @@
+fpl_id,player_name,fpl_display_name,club_2026_27,position,historical_player_name,club_2025_26,minutes_2025_26,matching_method,match_confidence,transfer_status,verification_status,category,is_transferred,has_historical_prior,Attack_Rating,Creativity_Rating,Defending_Rating,Player_Overall_Rating,fpl_cost,fpl_points_2026_27
+1,David Raya Martín,David Raya,Arsenal,G,David Raya,Arsenal,3150,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,42.22,60.07,6.2,54
+2,Kepa Arrizabalaga Revuelta,Kepa Arrizabalaga,Arsenal,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+3,Illan Meslier,Illan Meslier,Arsenal,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+4,Gabriel dos Santos Magalhães,Gabriel Gabriel,Arsenal,D,Gabriel Magalhães,Arsenal,2526,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,75.2,78.95,68.95,71.58,8.0,58
+5,Jurriën Timber,Jurriën J.Timber,Arsenal,D,Jurriën Timber,Arsenal,2457,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,82.46,67.57,28.7,41.85,6.5,8
+6,William Saliba,William Saliba,Arsenal,D,William Saliba,Arsenal,2435,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,43.61,71.66,45.67,50.66,5.9,0
+7,Myles Lewis-Skelly,Myles Lewis-Skelly,Arsenal,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,13
+8,Riccardo Calafiori,Riccardo Calafiori,Arsenal,D,Riccardo Calafiori,Arsenal,1545,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,78.74,48.39,38.75,44.68,5.9,51
+9,Piero Hincapié,Piero Hincapie,Arsenal,D,Piero Hincapié,Arsenal,1684,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,46.13,62.7,63.81,61.82,5.2,4
+10,Benjamin White,Benjamin White,Arsenal,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.4,42
+11,Cristhian Mosquera,Cristhian Mosquera,Arsenal,D,Cristhian Mosquera,Arsenal,778,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,35.2,52.75,57.99,54.66,5.1,12
+12,Bukayo Saka,Bukayo Saka,Arsenal,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,9.5,37
+13,Declan Rice,Declan Rice,Arsenal,M,Declan Rice,Arsenal,2919,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,56.55,84.21,68.93,72.09,7.4,47
+14,Eberechi Eze,Eberechi Eze,Arsenal,M,Eberechi Eze,Arsenal,1745,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,78.9,50.94,27.69,53.52,6.2,8
+15,Martin Ødegaard,Martin Ødegaard,Arsenal,M,Martin Ødegaard,Arsenal,1258,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,55.27,76.93,33.07,59.47,6.7,39
+16,Noni Madueke,Noni Madueke,Arsenal,M,Noni Madueke,Arsenal,1133,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,60.88,58.49,38.06,54.1,6.2,14
+17,Mikel Merino Zazón,Mikel Merino,Arsenal,M,Mikel Merino,Arsenal,1007,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,72.63,64.33,65.09,67.01,5.7,10
+18,Gabriel Martinelli Silva,Gabriel Martinelli,Arsenal,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.3,0
+19,Martín Zubimendi Ibáñez,Martín Zubimendi,Arsenal,M,Martín Zubimendi,Arsenal,2871,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,53.99,51.45,75.38,58.19,5.2,6
+20,Max Dowman,Max Dowman,Arsenal,M,Max Dowman,Arsenal,100,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,54.95,47.14,47.71,49.63,5.3,2
+22,Ethan Nwaneri,Ethan Nwaneri,Arsenal,M,Ethan Nwaneri,Arsenal,175,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,46.05,46.67,43.41,45.67,5.4,0
+23,Fábio Ferreira Vieira,Fábio Fábio Vieira,Arsenal,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,0
+24,Reiss Nelson,Reiss Nelson,Arsenal,M,Reiss Nelson,Brentford,140,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,54.36,56.09,49.42,53.9,5.5,0
+25,Viktor Gyökeres,Viktor Gyökeres,Arsenal,F,Viktor Gyökeres,Arsenal,2131,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,74.02,39.91,23.2,60.41,7.0,10
+26,Kai Havertz,Kai Havertz,Arsenal,F,Kai Havertz,Arsenal,442,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,51.47,60.6,58.32,54.43,7.4,33
+27,Gabriel Fernando de Jesus,Gabriel G.Jesus,Arsenal,F,Gabriel Jesus,Arsenal,346,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,63.33,44.91,56.74,58.07,5.9,0
+31,Ezri Konsa Ngoyo,Ezri Konsa,Arsenal,D,Ezri Konsa,Aston Villa,2856,Token_Subset_And_Position,0.9,Transferred_Club,Verified transfer,Verified transfer,True,True,39.9,60.53,22.72,32.0,4.8,49
+452,Bruno Guimarães Rodriguez Moura,Bruno Bruno G.,Arsenal,M,Bruno Guimarães,Newcastle United,2210,Token_Subset_And_Position,0.9,Transferred_Club,Verified transfer,Verified transfer,True,True,78.42,75.04,52.71,70.47,6.7,25
+557,Christos Tzolis,Christos Tzolis,Arsenal,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.1,19
+29,Marco Bizot,Marco M.Bizot,Aston Villa,G,Marco Bizot,Aston Villa,495,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,46.45,44.88,4.5,1
+30,Lucas Digne,Lucas Digne,Aston Villa,D,Lucas Digne,Aston Villa,1760,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,56.92,76.73,31.12,42.82,4.5,0
+32,Matty Cash,Matty Cash,Aston Villa,D,Matty Cash,Aston Villa,2805,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,74.59,62.62,26.69,38.67,4.3,18
+33,Tyrone Mings,Tyrone Mings,Aston Villa,D,Tyrone Mings,Aston Villa,1143,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,53.95,57.43,48.58,50.89,4.5,18
+34,Pau Torres,Pau Pau,Aston Villa,D,Pau Torres,Aston Villa,1569,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,35.46,55.56,28.64,34.71,4.4,8
+35,Lamare Bogarde,Lamare Bogarde,Aston Villa,M,Lamare Bogarde,Aston Villa,1021,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,26.72,35.32,56.33,37.99,4.9,1
+36,Ian Maatsen,Ian Maatsen,Aston Villa,D,Ian Maatsen,Aston Villa,1437,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,65.11,66.85,40.79,48.44,4.4,13
+37,Victor Lindelöf,Victor Lindelöf,Aston Villa,D,Victor Lindelöf,Aston Villa,793,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,39.02,66.01,32.14,39.6,4.5,24
+38,Andrés García,Andrés A.García,Aston Villa,D,Andrés García,Aston Villa,60,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,47.25,48.22,46.95,47.23,4.0,0
+39,Kosta Nedeljkovic,Kosta Nedeljkovic,Aston Villa,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+41,Emiliano Buendía Stati,Emiliano Buendía,Aston Villa,M,Emiliano Buendía,Aston Villa,1593,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,73.13,50.61,55.17,58.5,5.9,29
+44,Leon Bailey,Leon Bailey,Aston Villa,M,Leon Bailey,Aston Villa,364,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,45.47,61.24,44.1,52.23,5.4,0
+45,John McGinn,John McGinn,Aston Villa,M,John McGinn,Aston Villa,1979,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,62.11,58.84,32.98,53.36,5.4,34
+46,Ross Barkley,Ross Barkley,Aston Villa,M,Ross Barkley,Aston Villa,654,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,64.63,59.02,46.39,57.55,5.0,14
+47,Boubacar Kamara,Boubacar Kamara,Aston Villa,M,Boubacar Kamara,Aston Villa,1418,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,42.43,58.74,66.02,55.67,5.0,30
+48,Amadou Onana,Amadou Onana,Aston Villa,M,Amadou Onana,Aston Villa,1759,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,52.52,32.99,78.04,50.11,4.9,0
+49,Samuel Iling-Junior,Samuel Iling Jr,Aston Villa,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+50,Bradley Burrowes,Bradley Burrowes,Aston Villa,M,Bradley Burrowes,Aston Villa,16,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.23,49.19,49.19,49.21,4.4,0
+51,George Hemmings,George George Hemmings,Aston Villa,M,George Hemmings,Aston Villa,25,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.41,50.1,48.75,49.56,4.4,9
+52,Alysson Edward Franco da Rocha dos Santos,Alysson Edward Franco Alysson,Aston Villa,M,Alysson,Aston Villa,56,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,48.3,47.8,47.8,47.95,4.9,12
+53,Johan Manzambi,Johan Manzambi,Aston Villa,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.1,38
+54,Joao Gomes,Joao Gomes,Aston Villa,M,João Gomes,Wolves,2664,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,37.54,40.75,73.14,47.88,5.5,12
+55,Ollie Watkins,Ollie Watkins,Aston Villa,F,Ollie Watkins,Aston Villa,2582,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,65.78,45.23,26.14,56.68,7.8,0
+56,Tammy Abraham,Tammy Abraham,Aston Villa,F,Tammy Abraham,Aston Villa,294,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,60.12,49.63,48.42,56.33,5.5,4
+160,Alejandro Garnacho Ferreyra,Alejandro Garnacho,Aston Villa,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.7,4
+166,Nicolas Jackson,Nicolas N.Jackson,Aston Villa,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,7.0,43
+582,Brian Madjo,Brian Madjo,Aston Villa,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.4,0
+596,Matteo Ruggeri,Matteo Ruggeri,Aston Villa,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,6
+597,Zion Suzuki,Zion Suzuki,Aston Villa,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,31
+606,Triston Rowe,Triston Rowe,Aston Villa,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+607,Luka Lynch,Luka Lynch,Aston Villa,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+611,Aaron Wan-Bissaka,Aaron Wan-Bissaka,Aston Villa,D,Aaron Wan-Bissaka,West Ham,1931,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,19.94,34.01,50.58,44.2,4.5,13
+618,Leon Goretzka,Leon Goretzka,Aston Villa,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.9,4
+630,Taylor Harwood-Bellis,Taylor Harwood-Bellis,Aston Villa,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+631,Ibrahim Mbaye,Ibrahim Mbaye,Aston Villa,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.0,9
+667,James Wright,James Wright,Aston Villa,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+57,Đorđe Petrović,Đorđe Petrović,Bournemouth,G,Đorđe Petrović,Bournemouth,3150,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,54.09,58.19,4.5,28
+58,Fraser Forster,Fraser Forster,Bournemouth,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+59,Will Dennis,Will Dennis,Bournemouth,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+60,James Hill,James Hill,Bournemouth,D,James Hill,Bournemouth,1850,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,44.49,57.03,81.74,73.07,5.5,38
+61,Adrien Truffert,Adrien Truffert,Bournemouth,D,Adrien Truffert,Bournemouth,3110,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,49.78,55.92,58.11,56.84,5.4,31
+62,Bafodé Diakité,Bafodé Diakité,Bournemouth,D,Bafodé Diakité,Bournemouth,1286,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,27.57,43.85,60.8,54.09,4.9,3
+63,Veljko Milosavljevic,Veljko Milosavljević,Bournemouth,D,Veljko Milosavljević,Bournemouth,375,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,43.6,44.43,56.73,52.96,4.9,0
+64,Adam Smith,Adam Smith,Bournemouth,D,Adam Smith,Bournemouth,827,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,28.9,39.04,34.17,34.62,4.5,22
+65,Julián Araujo Zúñiga,Julián J.Araujo,Bournemouth,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+66,Julio Soler Barreto,Julio Soler,Bournemouth,D,Julio Soler,Bournemouth,34,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,48.4,50.09,48.26,48.64,4.0,1
+67,Rayan Vitor Simplício Rocha,Rayan Vitor Rayan,Bournemouth,M,Rayan,Bournemouth,883,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,71.46,61.56,49.06,61.4,6.3,28
+68,Marcus Tavernier,Marcus Tavernier,Bournemouth,M,Marcus Tavernier,Bournemouth,2480,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,78.65,60.83,39.87,60.94,6.6,55
+69,Alex Scott,Alex Scott,Bournemouth,M,Alex Scott,Bournemouth,2680,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,58.2,45.72,70.32,55.61,5.9,30
+70,Justin Kluivert,Justin Kluivert,Bournemouth,M,Justin Kluivert,Bournemouth,920,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,61.55,46.87,31.47,47.42,5.9,28
+71,Lewis Cook,Lewis Cook,Bournemouth,M,Lewis Cook,Bournemouth,892,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,31.27,49.05,71.57,49.35,5.0,18
+72,Ben Gannon-Doak,Ben Gannon-Doak,Bournemouth,M,Ben Gannon-Doak,Bournemouth,89,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,47.47,54.24,53.34,51.99,4.8,7
+73,Tyler Adams,Tyler Adams,Bournemouth,M,Tyler Adams,Bournemouth,1551,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,49.4,52.11,72.9,56.49,5.0,22
+74,David Brooks,David Brooks,Bournemouth,M,David Brooks,Bournemouth,1196,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,72.55,74.18,37.5,64.52,5.0,4
+75,Ryan Christie,Ryan Christie,Bournemouth,M,Ryan Christie,Bournemouth,945,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,65.85,45.37,61.46,55.54,5.0,15
+76,Alex Tóth,Alex Tóth.A,Bournemouth,M,Alex Tóth,Bournemouth,127,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,45.64,46.23,48.12,46.53,4.9,2
+77,Amine Adli,Amine Adli,Bournemouth,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.8,10
+78,Junior Kroupi,Junior Kroupi.Jr,Bournemouth,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,7.3,5
+79,Francisco Evanilson de Lima Barbosa,Francisco Evanilson Evanilson,Bournemouth,F,Evanilson,Bournemouth,2554,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,48.17,38.65,30.6,44.03,6.4,52
+80,Enes Ünal,Enes Enes Ünal,Bournemouth,F,Enes Ünal,Bournemouth,223,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,56.98,42.04,57.96,53.34,5.5,0
+81,Álvaro Rodríguez,Álvaro Rodríguez,Bournemouth,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.0,5
+566,António João Pereira de Albuquerque Tavares da Silva,António João Silva,Bournemouth,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.1,37
+573,Juanlu Sánchez,Juanlu Sanchez,Bournemouth,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,1
+608,Daniel Jebbison,Daniel Jebbison,Bournemouth,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,3
+615,Michele Di Gregorio,Michele Di Gregorio,Bournemouth,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+82,Caoimhín Kelleher,Caoimhín Kelleher,Brentford,G,Caoimhin Kelleher,Brentford,3060,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,53.25,59.27,5.0,33
+83,Hákon Rafn Valdimarsson,Hákon Rafn Valdimarsson,Brentford,G,Hákon Rafn Valdimarsson,Brentford,90,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,20.0,40.0,45.84,46.11,4.4,0
+84,Nathan Collins,Nathan Collins,Brentford,D,Nathan Collins,Brentford,2702,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,64.62,62.08,68.86,67.08,5.4,10
+85,Sepp van den Berg,Sepp Van den Berg,Brentford,D,Sepp van den Berg,Brentford,2663,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,65.83,53.59,71.75,67.52,4.9,13
+86,Keane Lewis-Potter,Keane Lewis-Potter,Brentford,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,38
+87,Kristoffer Ajer,Kristoffer Ajer,Brentford,D,Kristoffer Ajer,Brentford,1648,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,51.64,32.64,67.36,58.84,4.5,40
+88,Michael Kayode,Michael Kayode,Brentford,D,Michael Kayode,Brentford,2994,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,48.48,39.79,31.1,34.58,4.5,33
+89,Rico Henry,Rico Henry,Brentford,D,Rico Henry,Brentford,1334,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,31.28,33.64,25.88,27.97,4.4,1
+90,Aaron Hickey,Aaron Hickey,Brentford,D,Aaron Hickey,Brentford,625,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,51.51,34.6,40.16,40.18,4.5,9
+92,Kim Ji-soo,Kim Ji-soo,Brentford,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+93,Jannik Schuster,Jannik Schuster,Brentford,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,22
+94,Kevin Schade,Kevin Schade,Brentford,M,Kevin Schade,Brentford,2550,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,83.44,34.51,55.63,54.47,6.2,45
+95,Dango Ouattara,Dango O.Dango,Brentford,M,Dango Ouattara,Brentford,2077,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,75.91,56.98,60.3,63.49,6.2,25
+96,Mikkel Damsgaard,Mikkel Damsgaard,Brentford,M,Mikkel Damsgaard,Brentford,1902,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,63.9,77.48,57.11,68.31,5.3,19
+97,Mathias Jensen,Mathias Jensen,Brentford,M,Mathias Jensen,Brentford,2041,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,55.29,72.14,49.01,61.3,5.4,13
+98,Vitaly Janelt,Vitaly Janelt,Brentford,M,Vitaly Janelt,Brentford,1267,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,43.6,75.61,70.32,64.69,5.0,35
+99,Antoni Milambo,Antoni Milambo,Brentford,M,Antoni Milambo,Brentford,45,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,47.91,47.85,52.13,48.94,5.0,0
+100,Fábio Freitas Gouveia Carvalho,Fábio Carvalho,Brentford,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,6
+102,Yehor Yarmoliuk,Yehor Yarmoliuk,Brentford,M,Yehor Yarmoliuk,Brentford,2507,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,34.58,38.79,62.26,43.39,4.7,15
+103,Josh Dasilva,Josh Dasilva,Brentford,M,Josh Dasilva,Brentford,8,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.61,49.61,49.59,49.61,4.8,0
+105,Jaidon Anthony,Jaidon Anthony,Brentford,M,Jaidon Anthony,Burnley,2481,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,74.46,39.17,35.67,48.88,5.9,27
+106,Igor Thiago Nascimento Rodrigues,Igor Thiago Thiago,Brentford,F,Igor Thiago,Brentford,3014,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,83.93,40.47,76.3,72.3,7.8,32
+107,Kaye Furo,Kaye Furo,Brentford,F,Kaye Furo,Brentford,9,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.54,49.52,49.52,49.53,4.4,0
+108,Callum Wilson,Callum Wilson,Brentford,F,Callum Wilson,West Ham,1110,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,69.96,34.42,27.31,56.81,5.4,5
+565,Mamadou Sangaré,Mamadou M.Sangaré,Brentford,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.4,31
+620,El Hadji Malick Diouf,El Hadji Malick Diouf,Brentford,D,El Hadji Malick Diouf,West Ham,2441,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,41.13,64.65,42.36,46.7,4.5,5
+657,Gustavo Nunes Fernandes Gomes,Gustavo Nunes,Brentford,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+660,Benjamin Fredrick,Benjamin Fredrick,Brentford,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+661,Ellery Balcombe,Ellery Balcombe,Brentford,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+109,Bart Verbruggen,Bart Verbruggen,Brighton,G,Bart Verbruggen,Brighton,3150,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,66.37,61.46,4.6,51
+111,Jason Steele,Jason Steele,Brighton,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+113,Ferdi Kadıoğlu,Ferdi F.Kadıoğlu,Brighton,D,Ferdi Kadıoğlu,Brighton,2864,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,73.0,33.02,23.13,30.1,4.4,29
+114,Olivier Boscagli,Olivier Boscagli,Brighton,D,Olivier Boscagli,Brighton,819,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,32.37,71.94,61.17,60.44,4.5,39
+115,Maxim De Cuyper,Maxim De Cuyper,Brighton,D,Maxim De Cuyper,Brighton,1220,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,76.82,75.85,25.45,40.67,5.4,69
+116,Lewis Dunk,Lewis Dunk,Brighton,D,Lewis Dunk,Brighton,2574,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,41.42,73.65,51.88,55.19,4.5,36
+117,Diego Coppola,Diego Coppola,Brighton,D,Diego Coppola,Brighton,201,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,41.95,47.47,54.07,51.54,4.5,0
+118,Igor Julio dos Santos de Paulo,Igor Julio Igor,Brighton,D,Igor Júlio,Brighton,122,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,44.74,44.23,49.49,47.97,4.5,0
+119,João Pedro Loureiro da Costa,João Pedro Costinha,Brighton,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,13
+120,Michael Svoboda,Michael Svoboda,Brighton,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,2
+121,Mitoma Kaoru,Mitoma Mitoma,Brighton,M,Kaoru Mitoma,Brighton,1663,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,69.16,47.22,34.24,50.56,5.9,0
+122,Yankuba Minteh,Yankuba Minteh,Brighton,M,Yankuba Minteh,Brighton,2174,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,57.07,63.81,45.96,57.32,5.8,0
+123,Jack Hinshelwood,Jack Hinshelwood,Brighton,M,Jack Hinshelwood,Brighton,1506,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,72.35,55.07,35.99,55.48,5.9,24
+124,Pascal Groß,Pascal Groß,Brighton,M,Pascal Groß,Brighton,1366,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,46.84,74.69,50.86,60.38,6.2,60
+125,Georginio Rutter,Georginio Georginio,Brighton,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,13
+126,Matt O'Riley,Matt O'Riley,Brighton,M,Matt O'Riley,Brighton,203,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,58.85,44.04,47.55,49.36,5.4,2
+127,Diego Gómez Amarilla,Diego Gomez,Brighton,M,Diego Gómez,Brighton,2052,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,72.18,36.76,72.51,56.32,5.0,42
+128,Facundo Buonanotte,Facundo Buonanotte,Brighton,M,Facundo Buonanotte,Leeds United,74,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,47.47,48.23,48.63,48.1,5.0,0
+129,Yasin Ayari,Yasin Ayari,Brighton,M,Yasin Ayari,Brighton,1919,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,61.35,52.92,58.43,56.82,5.4,43
+130,Mats Wieffer,Mats Wieffer,Brighton,D,Mats Wieffer,Brighton,1824,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,75.54,68.73,63.05,65.43,4.8,8
+132,Harry Howell,Harry Howell,Brighton,M,Harry Howell,Brighton,93,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,45.9,46.57,50.94,47.46,4.5,0
+133,Tom Watson,Tom Watson,Brighton,M,Tom Watson,Brighton,73,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,51.96,46.71,47.0,48.36,5.0,0
+134,Nehemiah Oriola,Nehemiah Oriola,Brighton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+135,Zadok Yohanna,Zadok Yohanna,Brighton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.8,1
+137,Stefanos Tzimas,Stefanos Tzimas,Brighton,F,Stefanos Tzimas,Brighton,164,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,50.84,56.03,45.65,51.62,5.4,0
+138,Charalampos Kostoulas,Charalampos Kostoulas,Brighton,F,Charalampos Kostoulas,Brighton,337,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,62.54,62.54,62.54,62.54,5.8,45
+139,Evan Ferguson,Evan Ferguson,Brighton,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+328,Pascal Struijk,Pascal Struijk,Brighton,D,Pascal Struijk,Leeds United,2791,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,59.61,57.05,73.28,68.67,4.9,5
+504,Luka Vušković,Luka Vuskovic,Brighton,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.2,58
+594,Promise David,Promise David,Brighton,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.9,1
+600,Ibrahim Osman,Ibrahim Osman,Brighton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,3
+605,Malick Yalcouyé,Malick Yalcouyé,Brighton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,24
+614,Jaouen Hadjam,Jaouen Hadjam,Brighton,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,9
+624,Amario Cozier-Duberry,Amario Cozier-Duberry,Brighton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+639,José María Andrés Baixauli,José María Andrés,Brighton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,20
+652,Femi Azeez,Femi Azeez,Brighton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,0
+658,Younes Ibrahim,Younes Ibrahim,Brighton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+28,Emiliano Martínez Romero,Emiliano Martinez,Chelsea,G,Emiliano Martínez,Aston Villa,2655,Token_Subset_And_Position,0.9,Transferred_Club,Verified transfer,Verified transfer,True,True,20.0,40.0,71.23,62.74,4.9,20
+40,Morgan Rogers,Morgan Rogers,Chelsea,M,Morgan Rogers,Aston Villa,3105,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,79.53,55.91,31.54,56.9,8.2,50
+101,Jordan Henderson,Jordan Henderson,Chelsea,M,Jordan Henderson,Brentford,1831,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,31.48,70.43,49.68,53.56,4.9,25
+136,Danny Welbeck,Danny Welbeck,Chelsea,F,Danny Welbeck,Brighton,2068,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,75.87,49.66,44.14,66.14,5.8,8
+140,Robert Lynch Sánchez,Robert Sánchez,Chelsea,G,Robert Sánchez,Chelsea,2861,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,64.01,63.21,4.9,2
+141,Filip Jörgensen,Filip Jörgensen,Chelsea,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+142,Reece James,Reece James,Chelsea,D,Reece James,Chelsea,1896,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,71.26,83.52,34.48,47.97,5.2,3
+143,Trevoh Chalobah,Trevoh Chalobah,Chelsea,D,Trevoh Chalobah,Chelsea,2741,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,67.23,72.75,61.7,64.46,5.5,0
+144,Malo Gusto,Malo Gusto,Chelsea,D,Malo Gusto,Chelsea,2092,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,71.53,75.08,24.52,39.33,4.8,6
+145,Wesley Fofana,Wesley Fofana,Chelsea,D,Wesley Fofana,Chelsea,1493,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,42.07,70.62,78.02,72.95,5.0,19
+146,Benoît Badiashile Mukinayi,Benoît B.Badiashile,Chelsea,D,Benoît Badiashile,Chelsea,471,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,34.86,62.71,56.5,55.58,4.5,0
+148,Jorrel Hato,Jorrel Hato,Chelsea,D,Jorrel Hato,Chelsea,927,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,37.53,60.75,52.72,52.81,4.5,25
+149,Levi Samuels Colwill,Levi Colwill,Chelsea,D,Levi Colwill,Chelsea,45,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,47.9,52.09,47.91,48.75,4.8,20
+150,Mamadou Sarr,Mamadou M.Sarr,Chelsea,D,Mamadou Sarr,Chelsea,98,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,54.3,47.53,47.25,48.01,4.5,0
+151,Josh Acheampong,Josh Acheampong,Chelsea,D,Josh Acheampong,Chelsea,608,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,66.97,57.18,41.23,46.99,4.5,24
+152,Marco Palestra,Marco Palestra,Chelsea,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,8
+154,Cole Palmer,Cole Palmer,Chelsea,M,Cole Palmer,Chelsea,1696,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,81.73,49.07,32.27,54.67,9.8,45
+156,Pedro Lomba Neto,Pedro Neto,Chelsea,M,Pedro Neto,Chelsea,2489,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,64.69,72.73,21.32,57.47,6.6,40
+157,Estêvão Almeida de Oliveira Gonçalves,Estêvão Estêvão,Chelsea,M,Estêvão,Chelsea,852,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,69.68,65.98,34.25,59.16,6.3,9
+158,Jamie Bynoe-Gittens,Jamie Gittens,Chelsea,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.8,0
+159,Moisés Caicedo Corozo,Moisés Caicedo,Chelsea,M,Moisés Caicedo,Chelsea,2537,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,44.38,66.17,72.14,61.12,5.3,11
+161,Roméo Lavia,Roméo Lavia,Chelsea,M,Roméo Lavia,Chelsea,377,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,40.3,58.43,52.53,51.52,5.0,21
+163,Dário Luís Essugo,Dário D.Essugo,Chelsea,M,Dário Essugo,Chelsea,25,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,48.82,50.3,51.35,50.12,4.5,0
+164,Geovany Quenda,Geovany Quenda,Chelsea,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.2,7
+165,João Pedro Junqueira de Jesus,João Pedro João Pedro,Chelsea,F,João Pedro,Chelsea,2494,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,74.37,67.1,56.91,70.81,7.7,47
+168,Marc Guiu Paz,Marc Marc Guiu,Chelsea,F,Marc Guiu,Chelsea,276,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,48.26,58.71,42.22,50.27,5.0,0
+169,Shumaira Mheuka,Shumaira Mheuka,Chelsea,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+170,Emmanuel Emegha,Emmanuel Emegha,Chelsea,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+200,Maxence Lacroix,Maxence Lacroix,Chelsea,D,Maxence Lacroix,Crystal Palace,2846,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,62.23,54.94,83.27,75.5,5.9,24
+560,Mike Penders,Mike Penders,Chelsea,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,7
+561,Aaron Anselmino,Aaron Anselmino,Chelsea,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+568,Valentín Barco,Valentín Barco,Chelsea,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,4
+583,Pep Chavarría,Pep Chavarria,Chelsea,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,11
+662,Mahdi Nicoll-Jazuli,Mahdi Nicoll-Jazuli,Chelsea,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,1
+669,Teddy Sharman-Lowe,Teddy Sharman-Lowe,Chelsea,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+670,Olutayo Subuloye,Olutayo Subuloye,Chelsea,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+91,Ethan Pinnock,Ethan Pinnock,Coventry City,D,Ethan Pinnock,Brentford,321,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,51.41,39.53,61.96,56.42,4.5,25
+104,Frank Onyeka,Frank Onyeka,Coventry City,M,Frank Onyeka,Brentford,88,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,46.1,54.33,51.78,51.22,4.8,12
+110,Carl Rushworth,Carl Rushworth,Coventry City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,24
+171,Oliver Dovin,Oliver Dovin,Coventry City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+172,Ben Wilson,Ben Wilson,Coventry City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,0
+173,Bobby Thomas,Bobby Thomas,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,32
+174,Liam Kitching,Liam Kitching,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+175,Milan van Ewijk,Milan van Ewijk,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,19
+176,Jay Dasilva,Jay Dasilva,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,29
+177,Kaine Kesler-Hayden,Kaine Kesler-Hayden,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,1
+178,Jake Bidwell,Jake Bidwell,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+179,Joel Latibeaudiere,Joel Latibeaudiere,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,1
+180,Luke Woolfenden,Luke Woolfenden,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,0
+181,Miguel Brau,Miguel Brau,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+182,Aurèle Amenda,Aurèle Amenda,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,4
+183,Jack Rudoni,Jack Rudoni,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.9,37
+184,Matt Grimes,Matt Grimes,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.8,18
+185,Tatsuhiro Sakamoto,Tatsuhiro Sakamoto,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.8,12
+186,Ephron Mason-Clark,Ephron Mason-Clark,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.3,10
+187,Josh Eccles,Josh Eccles,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.8,0
+188,Victor Torp,Victor Torp,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.3,8
+189,George Shepherd,George Shepherd,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,0
+190,Loum Tchaouna,Loum Tchaouna,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.3,5
+191,Raphael Borges Rodrigues,Raphael Borges Rodrigues,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+192,Kai Andrews,Kai Andrews,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+193,Haji Wright,Haji Wright,Coventry City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.3,0
+194,Brandon Thomas-Asante,Brandon Thomas-Asante,Coventry City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,22
+195,Ellis Simms,Ellis Simms,Coventry City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.9,10
+196,Jahnoah Markelo,Jahnoah Markelo,Coventry City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,0
+197,Norman Bassette,Norman Bassette,Coventry City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+492,Taiwo Awoniyi,Taiwo Awoniyi,Coventry City,F,Taiwo Awoniyi,Nottingham Forest,381,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,64.87,60.75,43.08,61.66,5.4,14
+575,Caleb Yirenkyi,Caleb Yirenkyi,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.8,18
+584,Gustavo Hamer,Gustavo Hamer,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.3,5
+599,Sidiki Cherif,Sidiki Cherif,Coventry City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,17
+623,Dan Bentley,Dan Bentley,Coventry City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+655,Yann Gboho,Yann Gboho,Coventry City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.5,2
+656,Stephen Mfuni,Stephen Mfuni,Coventry City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,18
+42,Evann Guessand,Evann Guessand,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,2
+153,Axel Disasi,Axel Disasi,Crystal Palace,D,Axel Disasi,West Ham,990,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,62.58,33.28,36.53,38.49,4.4,7
+198,Dean Henderson,Dean Henderson,Crystal Palace,G,Dean Henderson,Crystal Palace,2970,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,64.54,69.63,4.9,8
+199,Walter Benítez,Walter Benitez,Crystal Palace,G,Walter Benítez,Crystal Palace,90,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,20.0,40.0,53.25,53.77,4.5,13
+202,Chris Richards,Chris Richards,Crystal Palace,D,Chris Richards,Crystal Palace,2617,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,48.95,40.54,79.22,68.46,4.9,26
+203,Jaydee Canvot,Jaydee Canvot,Crystal Palace,D,Jaydee Canvot,Crystal Palace,1077,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,47.08,47.38,73.24,65.45,4.8,15
+204,Tyrick Mitchell,Tyrick Mitchell,Crystal Palace,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,32
+205,Borna Sosa,Borna Sosa,Crystal Palace,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+206,Chadi Riad Dnanou,Chadi Chadi Riad,Crystal Palace,D,Chadi Riad,Crystal Palace,390,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,51.45,64.43,44.96,49.5,4.3,1
+207,Oscar Mingueza,Oscar Mingueza,Crystal Palace,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.3,2
+208,Ismaïla Sarr,Ismaïla Sarr,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.2,2
+210,Adam Wharton,Adam Wharton,Crystal Palace,M,Adam Wharton,Crystal Palace,2335,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,33.5,81.28,63.4,62.48,5.4,27
+211,Yéremy Pino Santos,Yéremy Yeremy,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,27
+212,Will Hughes,Will Hughes,Crystal Palace,M,Will Hughes,Crystal Palace,1427,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,31.6,38.9,56.72,41.17,4.3,4
+213,Jefferson Lerma Solís,Jefferson Lerma,Crystal Palace,M,Jefferson Lerma,Crystal Palace,1524,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,47.9,54.49,73.95,57.38,4.8,11
+214,Daichi Kamada,Daichi Kamada,Crystal Palace,M,Daichi Kamada,Crystal Palace,1668,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,38.87,45.05,60.52,47.06,5.0,34
+215,Justin Devenny,Justin Devenny,Crystal Palace,M,Justin Devenny,Crystal Palace,740,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,62.03,31.09,55.16,46.39,5.0,0
+216,Romain Esse,Romain Esse,Crystal Palace,M,Romain Esse,Crystal Palace,54,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,47.52,47.74,50.3,48.31,5.0,0
+217,Matheus França de Oliveira,Matheus M.França,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+218,Cheick Doucouré,Cheick Doucouré,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.8,0
+219,Jesurun Rak-Sakyi,Jesurun J.Rak-Sakyi,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+220,Rio Cardines,Rio Cardines,Crystal Palace,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+221,Joél Drakes-Thomas,Joél Drakes-Thomas,Crystal Palace,M,Joel Drakes-Thomas,Crystal Palace,25,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,48.82,48.96,49.82,49.13,4.4,0
+222,Jørgen Strand Larsen,Jørgen Strand Larsen,Crystal Palace,F,Jørgen Strand Larsen,Crystal Palace,2083,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,37.9,34.44,59.33,39.18,6.0,21
+223,Jean-Philippe Mateta,Jean-Philippe Mateta,Crystal Palace,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.3,3
+224,Eddie Nketiah,Eddie Nketiah,Crystal Palace,F,Eddie Nketiah,Crystal Palace,416,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,58.29,51.1,62.05,56.87,5.4,12
+225,Christantus Uche,Christantus Uche,Crystal Palace,F,Christantus Uche,Crystal Palace,193,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,47.12,43.97,53.41,46.96,5.0,0
+241,Dwight McNeil,Dwight McNeil,Crystal Palace,M,Dwight McNeil,Everton,1179,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,46.49,40.28,47.3,43.9,5.3,9
+555,Remi Matthews,Remi Matthews,Crystal Palace,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+577,Takehiro Tomiyasu,Takehiro Tomiyasu,Crystal Palace,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.3,3
+588,Anan Khalaili,Anan Khalaili,Crystal Palace,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,22
+595,Zavier Gozo,Zavier Gozo,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,2
+633,Honest Ahanor,Honest Ahanor,Crystal Palace,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,3
+643,Ben Chilwell,Ben Chilwell,Crystal Palace,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,8
+644,Quinten Timber,Quinten Timber,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,17
+647,Darío Osorio,Darío Osorio,Crystal Palace,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.4,3
+21,Christian Nørgaard,Christian Nørgaard,Everton,M,Christian Nørgaard,Arsenal,63,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,52.24,47.32,53.02,50.22,4.8,0
+209,Brennan Johnson,Brennan Johnson,Everton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.8,14
+226,Jordan Pickford,Jordan Pickford,Everton,G,Jordan Pickford,Everton,3150,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,64.33,66.78,5.5,36
+227,Mark Travers,Mark Travers,Everton,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+228,Tom King,Tom King,Everton,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+229,James Tarkowski,James Tarkowski,Everton,D,James Tarkowski,Everton,3060,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,66.81,42.36,76.85,68.95,6.2,54
+230,Jarrad Branthwaite,Jarrad Branthwaite,Everton,D,Jarrad Branthwaite,Everton,689,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,64.58,44.73,64.33,60.44,5.5,40
+231,Michael Keane,Michael Keane,Everton,D,Michael Keane,Everton,2349,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,75.12,22.02,80.43,68.22,4.7,2
+232,Jake O'Brien,Jake O'Brien,Everton,D,Jake O'Brien,Everton,2891,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,54.52,18.76,53.66,46.77,4.8,12
+233,Vitalii Mykolenko,Vitalii Mykolenko,Everton,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.6,34
+234,Nathan Patterson,Nathan Patterson,Everton,D,Nathan Patterson,Everton,266,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,53.03,39.75,59.34,54.79,4.5,0
+235,Adam Aznou,Adam Aznou,Everton,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+236,Kiernan Dewsbury-Hall,Kiernan Dewsbury-Hall,Everton,M,Kiernan Dewsbury-Hall,Everton,2372,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,71.06,68.64,41.02,62.46,6.6,41
+238,Jack Grealish,Jack Grealish,Everton,M,Jack Grealish,Everton,1631,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,57.98,73.63,32.2,58.58,6.5,10
+239,James Garner,James Garner,Everton,M,James Garner,Everton,3144,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,44.82,76.29,82.58,68.42,6.0,23
+242,Tyrique George,Tyrique George,Everton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,28
+243,Carlos Alcaraz Durán,Carlos Alcaraz,Everton,M,Carlos Alcaraz,Everton,711,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,55.88,51.26,46.64,51.49,4.8,3
+244,Harrison Armstrong,Harrison Armstrong,Everton,M,Harrison Armstrong,Everton,509,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,48.97,35.72,55.5,44.64,5.0,26
+245,Tyler Dibling,Tyler Dibling,Everton,M,Tyler Dibling,Everton,371,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,40.13,37.91,52.08,42.12,5.3,3
+246,Merlin Röhl,Merlin Röhl,Everton,M,Merlin Röhl,Everton,464,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,42.39,34.77,61.5,43.74,4.9,13
+247,Hayden Hackney,Hayden Hackney,Everton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,13
+248,Norberto Bercique Gomes Betuncal,Norberto Bercique Beto,Everton,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.4,2
+249,Thierno Barry,Thierno Barry,Everton,F,Thierno Barry,Everton,1811,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,56.28,25.86,73.48,50.4,5.6,39
+649,Ainsley Maitland-Niles,Ainsley Maitland-Niles,Everton,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,26
+654,Braiden Graham,Braiden Graham,Everton,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+250,Bernd Leno,Bernd Leno,Fulham,G,Bernd Leno,Fulham,3150,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,34.44,39.85,4.5,36
+251,Benjamin Lecomte,Benjamin Lecomte,Fulham,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+252,Alfie McNally,Alfie McNally,Fulham,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+253,Joachim Andersen,Joachim Andersen,Fulham,D,Joachim Andersen,Fulham,2832,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,47.21,76.37,79.37,75.55,5.0,3
+254,Antonee Robinson,Antonee Robinson,Fulham,D,Antonee Robinson,Fulham,1222,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,33.9,49.84,54.72,51.66,4.4,30
+255,Jorge Cuenca Barreno,Jorge J.Cuenca,Fulham,D,Jorge Cuenca,Fulham,952,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,31.56,57.7,67.28,61.79,4.4,3
+256,Kenny Tete,Kenny Tete,Fulham,D,Kenny Tete,Fulham,1802,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,58.1,44.54,58.85,55.92,4.4,3
+257,Calvin Bassey,Calvin Bassey,Fulham,D,Calvin Bassey,Fulham,2274,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,54.65,52.23,44.54,47.09,4.5,34
+258,Timothy Castagne,Timothy Castagne,Fulham,D,Timothy Castagne,Fulham,1609,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,66.49,37.5,45.47,45.98,4.5,37
+261,Alex Iwobi,Alex Iwobi,Fulham,M,Alex Iwobi,Fulham,2277,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,59.21,69.11,28.16,55.9,5.4,38
+262,Emile Smith Rowe,Emile Smith Rowe,Fulham,M,Emile Smith Rowe,Fulham,1747,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,66.03,38.37,43.4,47.93,5.2,3
+263,Kevin Santos Lopes de Macedo,Kevin Kevin,Fulham,M,Kevin,Fulham,904,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,62.89,44.51,48.81,51.1,5.2,5
+264,Oscar Bobb,Oscar Bobb,Fulham,M,Oscar Bobb,Fulham,871,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,46.49,52.34,41.8,47.95,5.5,32
+265,Sander Berge,Sander Berge,Fulham,M,Sander Berge,Fulham,2776,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,29.5,50.0,60.79,46.55,4.9,21
+266,Tom Cairney,Tom Cairney,Fulham,M,Tom Cairney,Fulham,699,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,49.17,57.49,35.64,49.53,4.9,2
+268,Josh King,Josh King,Fulham,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,36
+269,Ryan Sessegnon,Ryan Sessegnon,Fulham,D,Ryan Sessegnon,Fulham,1822,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,75.15,46.41,43.76,47.43,4.3,8
+270,Harrison Reed,Harrison Reed,Fulham,M,Harrison Reed,Fulham,126,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,55.79,50.76,44.8,50.78,4.3,0
+271,Rodrigo Muniz Carvalho,Rodrigo Muniz,Fulham,F,Rodrigo Muniz,Fulham,768,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,40.65,42.48,71.65,44.21,5.3,6
+272,Jonah Kusi-Asare,Jonah Kusi-Asare,Fulham,F,Jonah Kusi-Asare,Fulham,66,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,46.82,47.4,46.85,46.97,4.4,0
+569,Gonzalo García,Gonzalo Gonzalo,Fulham,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.9,22
+570,César Palacios,César Palacios,Fulham,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,15
+580,Shea Charles,Shea Charles,Fulham,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,23
+610,Luc De Fougerolles,Luc De Fougerolles,Fulham,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+626,Macaulay Zepa,Macaulay Zepa,Fulham,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+635,Hugo Larsson,Hugo Larsson,Fulham,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,8
+636,Manuel Ángel Morán Ibáñez,Manuel Ángel Ángel,Fulham,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+650,David Affengruber,David Affengruber,Fulham,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,30
+240,Tim Iroegbunam,Tim Iroegbunam,Hull City,M,Tim Iroegbunam,Everton,1258,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,33.34,43.89,71.37,47.6,5.0,21
+273,Dillon Phillips,Dillon Phillips,Hull City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+274,Jack Butland,Jack Butland,Hull City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,0
+275,Harvey Cartwright,Harvey Cartwright,Hull City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+276,Thimothée Lo-Tutala,Thimothée Lo-Tutala,Hull City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+277,John Egan,John Egan,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.1,36
+278,Charlie Hughes,Charlie Hughes,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,0
+279,Semi Ajayi,Semi Ajayi,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.2,36
+280,Lewie Coyle,Lewie Coyle,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,20
+281,Cody Drameh,Cody Drameh,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,2
+282,Ryan Giles,Ryan Giles,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,30
+283,Matty Jacob,Matty Jacob,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+284,Cathal McCarthy,Cathal McCarthy,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+285,Paddy McNair,Paddy McNair,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,1
+286,Mohamed Belloumi,Mohamed Belloumi,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.3,48
+287,Liam Millar,Liam Millar,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,6
+288,Kieran Dowell,Kieran Dowell,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,0
+289,Matt Crooks,Matt Crooks,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,6
+290,Regan Slater,Regan Slater,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,22
+291,Eliot Matazo,Eliot Matazo,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+292,Abdülkadir Ömür,Abdülkadir Ömür,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.8,0
+293,Abu Kamara,Abu Kamara,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,0
+294,Óscar Zambrano,Óscar Zambrano,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+295,Oli McBurnie,Oli McBurnie,Hull City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.5,36
+296,David Akintola,David Akintola,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,0
+297,Darko Gyabi,Darko Gyabi,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,0
+298,Enis Destan,Enis Destan,Hull City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+299,Mason Burstow,Mason Burstow,Hull City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+340,Joe Gelhardt,Joe Gelhardt,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,12
+556,Matt Targett,Matt Targett,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,1
+563,Hidemasa Morita,Hidemasa Morita,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.9,5
+572,Konstantinos Tzolakis,Konstantinos Tzolakis,Hull City,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.7,43
+574,Jens Hjertø-Dahl,Jens Hjertø-Dahl,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.8,1
+576,Elliot Stroud,Elliot Stroud,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.9,15
+585,Lucas Herrington,Lucas Herrington,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,9
+586,Nobel Mendy,Nobel Mendy,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.1,31
+589,Lucas Gourna-Douath,Lucas Gourna-Douath,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.9,4
+617,Mohamed-Ali Cho,Mohamed-Ali Cho,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,11
+632,Ilyas Ansah,Ilyas Ansah,Hull City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.9,0
+637,Robinio Vaz,Robinio Vaz,Hull City,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,5
+638,Brooke Norton-Cuffy,Brooke Norton-Cuffy,Hull City,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,5
+642,Sorba Thomas,Sorba Thomas,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.5,13
+645,Christos Mouzakitis,Christos Mouzakitis,Hull City,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,0
+259,Issa Diop,Issa Diop,Ipswich Town,D,Issa Diop,Fulham,606,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,34.88,42.61,45.57,43.91,3.9,20
+267,Saša Lukić,Saša Lukić,Ipswich Town,M,Saša Lukić,Fulham,1554,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,50.0,49.7,64.78,53.56,4.9,15
+300,Christian Walton,Christian Walton,Ipswich Town,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,10
+301,Alex Palmer,Alex Palmer,Ipswich Town,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+302,David Button,David Button,Ipswich Town,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+303,Cédric Kipré,Cédric Kipré,Ipswich Town,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,0
+304,Dara O'Shea,Dara O'Shea,Ipswich Town,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,27
+305,Leif Davis,Leif Davis,Ipswich Town,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,29
+306,Jacob Greaves,Jacob Greaves,Ipswich Town,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,4
+307,Ben Johnson,Ben Johnson,Ipswich Town,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,0
+308,Darnell Furlong,Darnell Furlong,Ipswich Town,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,3.9,1
+309,Marcelino Núñez,Marcelino Núñez,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.8,6
+310,Azor Matusiwa,Azor Matusiwa,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.9,6
+311,Wes Burns,Wes Burns,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,0
+312,Jack Taylor,Jack Taylor,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,0
+313,Jack Clarke,Jack Clarke,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.3,18
+314,Chiedozie Ogbene,Chiedozie Ogbene,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.9,0
+315,Abdul Fatawu,Abdul Fatawu,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.4,16
+316,Emersonn Correia da Silva,Emersonn Emersonn,Ipswich Town,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.5,33
+317,George Hirst,George Hirst,Ipswich Town,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,0
+318,Jaden Philogene,Jaden Philogene,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.4,8
+319,Sam Szmodics,Sam Szmodics,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,0
+320,Chuba Akpom,Chuba Akpom,Ipswich Town,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,11
+321,Sindre Walle Egeli,Sindre Walle Egeli,Ipswich Town,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,2
+322,Ali Al-Hamadi,Ali Al-Hamadi,Ipswich Town,F,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,0
+323,Kasey McAteer,Kasey McAteer,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.3,3
+324,Anis Mehmeti,Anis Mehmeti,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.8,0
+554,Kayne van Oevelen,Kayne Van Oevelen,Ipswich Town,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+562,Daizen Maeda,Daizen Maeda,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.3,19
+564,Kjell Scherpen,Kjell Scherpen,Ipswich Town,G,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.4,7
+571,Florentino Ibrain Morris Luís,Florentino Ibrain Florentino,Ipswich Town,M,Florentino Luís,Burnley,1863,Token_Subset_And_Position,0.9,Transferred_Club,Verified transfer,Verified transfer,True,True,28.49,39.4,80.5,46.4,4.8,18
+591,Julio Enciso,Julio Enciso,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.5,37
+592,Abdoul Ouattara,Abdoul Ouattara,Ipswich Town,D,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.0,25
+602,Cameron Humphreys,Cameron Humphreys,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,4.5,0
+619,Exequiel Palacios,Exequiel Palacios,Ipswich Town,M,,,0,None,0.0,Promoted_Squad_Player,New Premier League player,New Premier League player,False,False,50.0,50.0,50.0,50.0,5.0,23
+640,Zian Flemming,Zian Flemming,Ipswich Town,F,Zian Flemming,Burnley,1554,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,65.99,22.1,71.0,55.52,5.5,14
+260,Harry Wilson,Harry Wilson,Leeds United,M,Harry Wilson,Fulham,2600,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,81.13,63.09,36.2,61.78,6.2,11
+326,Lucas Estella Perri,Lucas Estella Perri,Leeds United,G,Lucas Perri,Leeds United,1440,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,39.64,39.25,4.5,0
+327,Jaka Bijol,Jaka Bijol,Leeds United,D,Jaka Bijol,Leeds United,1663,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,68.51,61.18,76.21,72.43,5.0,21
+329,Joe Rodon,Joe Rodon,Leeds United,D,Joe Rodon,Leeds United,2683,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,65.02,36.67,61.21,56.68,4.3,7
+330,Jayden Bogle,Jayden Bogle,Leeds United,D,Jayden Bogle,Leeds United,2731,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,58.29,48.94,27.27,34.7,4.8,51
+331,Gabriel Gudmundsson,Gabriel Gudmundsson,Leeds United,D,Gabriel Gudmundsson,Leeds United,2642,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,44.31,32.09,29.98,31.84,4.5,27
+332,James Justin,James Justin,Leeds United,D,James Justin,Leeds United,1646,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,75.02,47.26,64.06,61.8,4.5,42
+333,Sebastiaan Bornauw,Sebastiaan Bornauw,Leeds United,D,Sebastiaan Bornauw,Leeds United,315,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,38.58,38.65,59.15,53.0,4.5,0
+334,Tarik Muharemović,Tarik Muharemović,Leeds United,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.1,46
+335,Anton Stach,Anton Stach,Leeds United,M,Anton Stach,Leeds United,2214,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,65.91,67.61,69.64,67.61,6.0,33
+336,Noah Okafor,Noah Okafor,Leeds United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.8,23
+337,Brenden Aaronson,Brenden Aaronson,Leeds United,M,Brenden Aaronson,Leeds United,2261,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,68.05,61.92,42.17,58.82,5.2,12
+338,Ethan Ampadu,Ethan Ampadu,Leeds United,M,Ethan Ampadu,Leeds United,2853,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,38.78,40.95,79.32,49.89,5.3,28
+339,Sean Longstaff,Sean Longstaff,Leeds United,M,Sean Longstaff,Leeds United,1003,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,53.51,68.32,62.55,62.44,4.8,5
+341,Wilfried Gnonto,Wilfried Gnonto,Leeds United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+342,Jack Harrison,Jack Harrison,Leeds United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+343,Daniel James,Daniel James,Leeds United,M,Daniel James,Leeds United,423,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,54.72,40.56,38.58,44.31,4.9,5
+344,Ilia Gruev,Ilia Gruev,Leeds United,M,Ilia Gruev,Leeds United,1334,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,31.8,56.82,53.41,48.46,5.0,0
+345,Tanaka Ao,Tanaka Tanaka,Leeds United,M,Ao Tanaka,Leeds United,1099,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,58.9,46.07,53.67,51.82,4.9,22
+346,Dominic Calvert-Lewin,Dominic Calvert-Lewin,Leeds United,F,Dominic Calvert-Lewin,Leeds United,2477,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,72.15,30.03,65.61,60.97,6.1,37
+347,Lukas Nmecha,Lukas Nmecha,Leeds United,F,Lukas Nmecha,Leeds United,945,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,73.07,51.27,50.76,65.39,5.3,11
+348,Joël Piroe,Joël Piroe,Leeds United,F,Joël Piroe,Leeds United,287,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,44.13,46.77,39.83,44.36,5.0,0
+349,Mateo Joseph Fernández-Regatillo,Mateo Mateo Joseph,Leeds United,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+385,James Trafford,James Trafford,Leeds United,G,James Trafford,Manchester City,270,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,20.0,40.0,61.05,59.91,5.0,44
+598,Nico Elvedi,Nico Elvedi,Leeds United,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,18
+603,Jayden Lienou,Jayden Lienou,Leeds United,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+604,Alfie Cresswell,Alfie Cresswell,Leeds United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+625,Alex Cairns,Alex Cairns,Leeds United,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+629,Michael Zetterer,Michael Zetterer,Leeds United,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+641,Melvin Bard,Melvin Bard,Leeds United,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,1
+648,Jean-Mattéo Bahoya,Jean-Mattéo Bahoya,Leeds United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,3
+350,Alisson Becker,Alisson A.Becker,Liverpool,G,Alisson,Liverpool,2250,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,40.23,52.41,5.5,38
+351,Giorgi Mamardashvili,Giorgi Mamardashvili,Liverpool,G,Giorgi Mamardashvili,Liverpool,688,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,50.68,51.78,4.8,0
+352,Freddie Woodman,Freddie Woodman,Liverpool,G,Freddie Woodman,Liverpool,212,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,20.0,40.0,52.71,48.72,4.0,0
+353,Armin Pecsi,Armin Pecsi,Liverpool,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+354,Vitezslav Jaros,Vitezslav Jaros,Liverpool,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+355,Harvey Davies,Harvey Davies,Liverpool,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+356,Virgil van Dijk,Virgil Virgil,Liverpool,D,Virgil van Dijk,Liverpool,3150,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,80.98,69.11,79.66,77.68,6.4,39
+357,Jeremie Frimpong,Jeremie Frimpong,Liverpool,D,Jeremie Frimpong,Liverpool,962,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,46.35,68.24,25.63,36.22,5.2,4
+358,Milos Kerkez,Milos Kerkez,Liverpool,D,Miloš Kerkez,Liverpool,2103,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,60.88,48.62,28.04,35.44,5.3,23
+359,Joe Gomez,Joe Gomez,Liverpool,D,Joe Gomez,Liverpool,553,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,50.54,68.6,47.96,52.34,4.9,2
+360,Conor Bradley,Conor Bradley,Liverpool,D,Conor Bradley,Liverpool,932,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,36.92,67.1,39.51,44.77,4.9,0
+361,Wellity Lucky,Wellity Lucky,Liverpool,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,3.9,0
+362,Jeremy Jacquet,Jeremy Jacquet,Liverpool,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.1,40
+363,Giovanni Leoni,Giovanni Leoni,Liverpool,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,3.9,0
+364,Kostas Tsimikas,Kostas Tsimikas,Liverpool,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,4
+365,Calvin Ramsay,Calvin Ramsay,Liverpool,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+366,Florian Wirtz,Florian Wirtz,Liverpool,M,Florian Wirtz,Liverpool,2347,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,72.72,71.34,25.91,60.39,7.2,33
+367,Cody Gakpo,Cody Gakpo,Liverpool,M,Cody Gakpo,Liverpool,2513,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,78.4,65.08,35.98,61.8,7.1,37
+368,Dominik Szoboszlai,Dominik Szoboszlai,Liverpool,M,Dominik Szoboszlai,Liverpool,2963,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,68.26,80.68,53.65,70.2,6.7,22
+369,Rio Ngumoha,Rio Ngumoha,Liverpool,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.7,8
+370,Federico Chiesa,Federico Chiesa,Liverpool,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,1
+371,Ryan Gravenberch,Ryan Gravenberch,Liverpool,M,Ryan Gravenberch,Liverpool,2757,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,50.72,64.0,64.36,60.11,5.8,11
+372,Alexis Mac Allister,Alexis Mac Allister,Liverpool,M,Alexis Mac Allister,Liverpool,2405,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,55.89,59.7,50.0,56.13,5.4,18
+373,Curtis Jones,Curtis C.Jones,Liverpool,M,Curtis Jones,Liverpool,1680,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,44.73,77.29,52.17,61.24,5.5,0
+374,Endo Wataru,Endo Endo,Liverpool,M,Wataru Endo,Liverpool,206,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,43.17,55.14,58.96,52.51,4.8,0
+375,Trey Nyoni,Trey Nyoni,Liverpool,M,Trey Nyoni,Liverpool,29,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,51.46,49.12,48.56,49.68,4.8,7
+376,Stefan Bajčetić Maquieira,Stefan Bajcetic,Liverpool,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+377,Victor Munoz,Victor Munoz,Liverpool,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.5,27
+378,James McConnell,James McConnell,Liverpool,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+379,Alexander Isak,Alexander Isak,Liverpool,F,Alexander Isak,Liverpool,691,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,53.23,45.48,42.04,50.17,9.2,53
+380,Hugo Ekitiké,Hugo Ekitiké,Liverpool,F,Hugo Ekitiké,Liverpool,1810,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,68.85,68.19,42.4,66.04,7.4,0
+381,Lewis Koumas,Lewis Koumas,Liverpool,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,8
+382,Jayden Danns,Jayden Danns,Liverpool,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+383,Harvey Elliott,Harvey Elliott,Liverpool,M,Harvey Elliott,Aston Villa,117,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,48.69,49.89,45.18,48.35,5.4,0
+579,Ronald Araujo,Ronald Araujo,Liverpool,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.4,37
+627,Bradley Barcola,Bradley Barcola,Liverpool,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,8.1,20
+155,Enzo Fernández,Enzo Enzo,Manchester City,M,Enzo Fernández,Chelsea,2851,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,84.75,78.23,38.78,70.32,6.9,21
+237,Iliman Ndiaye,Iliman Ndiaye,Manchester City,M,Iliman Ndiaye,Everton,2516,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,75.95,54.21,44.04,58.19,5.8,35
+384,Gianluigi Donnarumma,Gianluigi Donnarumma,Manchester City,G,Gianluigi Donnarumma,Manchester City,2790,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,61.54,70.45,5.5,32
+386,Marcus Bettinelli,Marcus Bettinelli,Manchester City,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+387,Nico O'Reilly,Nico O'Reilly,Manchester City,D,Nico O'Reilly,Manchester City,2468,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,85.81,72.56,33.65,46.65,6.2,14
+388,Marc Guéhi,Marc Guéhi,Manchester City,D,Marc Guéhi,Manchester City,2880,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,79.92,81.21,62.27,67.82,6.0,37
+389,Matheus Nunes,Matheus Matheus N.,Manchester City,D,Matheus Nunes,Manchester City,2627,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,42.64,85.14,34.22,45.24,5.9,21
+390,Rúben dos Santos Gato Alves Dias,Rúben Rúben,Manchester City,D,Rúben Dias,Manchester City,2059,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,61.6,68.67,47.84,53.38,5.5,27
+391,Joško Gvardiol,Joško Gvardiol,Manchester City,D,Joško Gvardiol,Manchester City,1304,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,77.24,74.9,40.81,51.27,5.7,44
+392,Rayan Aït-Nouri,Rayan Aït-Nouri,Manchester City,D,Rayan Aït-Nouri,Manchester City,873,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,54.03,73.78,45.69,52.14,5.2,0
+393,Abdukodir Khusanov,Abdukodir Khusanov,Manchester City,D,Abdukodir Khusanov,Manchester City,1249,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,44.58,57.06,54.1,53.74,5.3,17
+394,Max Alleyne,Max Alleyne,Manchester City,D,Max Alleyne,Manchester City,135,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,56.15,55.42,51.29,52.6,5.0,0
+395,Rico Lewis,Rico Lewis,Manchester City,D,Rico Lewis,Manchester City,333,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,43.52,63.5,39.85,44.95,4.3,2
+396,Vitor de Oliveira Nunes dos Reis,Vitor Vitor Reis,Manchester City,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,1
+397,Antoine Semenyo,Antoine Semenyo,Manchester City,M,Antoine Semenyo,Manchester City,2906,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,86.36,41.27,37.64,53.89,8.2,37
+398,Phil Foden,Phil Foden,Manchester City,M,Phil Foden,Manchester City,1871,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,79.9,76.04,31.99,66.19,6.8,20
+399,Rayan Cherki,Rayan Cherki,Manchester City,M,Rayan Cherki,Manchester City,1657,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,71.29,81.17,27.47,64.78,7.9,45
+400,Jérémy Doku,Jérémy Doku,Manchester City,M,Jérémy Doku,Manchester City,1574,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,67.87,79.08,28.19,63.0,7.5,23
+402,Rodrigo 'Rodri' Hernandez Cascante,Rodrigo 'Rodri' Rodrigo,Manchester City,M,Rodri,Manchester City,1423,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,38.62,76.25,71.88,63.87,6.5,0
+404,Tijjani Reijnders,Tijjani Reijnders,Manchester City,M,Tijjani Reijnders,Manchester City,1503,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,76.51,65.19,30.34,59.87,6.0,0
+406,Mateo Kovačić,Mateo Kovačić,Manchester City,M,Mateo Kovačić,Manchester City,36,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.51,51.89,49.01,50.45,5.3,7
+407,Claudio Echeverri,Claudio Echeverri,Manchester City,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+408,Kalvin Phillips,Kalvin Phillips,Manchester City,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+409,Divine Mukasa,Divine Mukasa,Manchester City,M,Divine Mukasa,Manchester City,25,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,48.82,51.26,48.75,49.9,4.5,0
+410,Jeremy Monga,Jeremy Monga,Manchester City,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+411,Erling Haaland,Erling Haaland,Manchester City,F,Erling Haaland,Manchester City,2778,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,87.02,64.58,45.89,77.3,15.8,68
+481,Elliot Anderson,Elliot Anderson,Manchester City,M,Elliot Anderson,Nottingham Forest,3089,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,45.57,69.54,72.86,63.18,6.3,27
+587,Gerónimo Rulli,Gerónimo Rulli,Manchester City,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.9,0
+616,Ayyoub Bouaddi,Ayyoub Bouaddi,Manchester City,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,5
+621,Ryan McAidoo,Ryan McAidoo,Manchester City,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,2
+622,Kaden Braithwaite,Kaden Braithwaite,Manchester City,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,3.9,1
+628,Allan Andrade Elias,Allan Allan,Manchester City,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.0,2
+653,Floyd Samba,Floyd Samba,Manchester City,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+43,Youri Tielemans,Youri Tielemans,Manchester United,M,Youri Tielemans,Aston Villa,1666,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,37.32,74.42,62.68,60.36,5.7,24
+131,Carlos Baleba,Carlos Baleba,Manchester United,M,Carlos Baleba,Brighton,1488,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,30.71,33.68,65.13,40.65,4.9,8
+162,Andrey Nascimento dos Santos,Andrey Andrey Santos,Manchester United,M,Andrey Santos,Chelsea,1127,Token_Subset_And_Position,0.9,Transferred_Club,Verified transfer,Verified transfer,True,True,40.2,51.32,64.03,51.16,4.7,10
+325,Karl Darlow,Karl Darlow,Manchester United,G,Karl Darlow,Leeds United,1710,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,20.0,40.0,43.79,44.21,4.5,0
+412,Senne Lammens,Senne Lammens,Manchester United,G,Senne Lammens,Manchester United,2610,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,58.22,51.8,4.8,20
+413,Altay Bayındır,Altay Bayindir,Manchester United,G,Altay Bayındır,Manchester United,540,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,40.92,38.83,4.5,0
+414,Tom Heaton,Tom Heaton,Manchester United,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+415,Patrick Dorgu,Patrick Dorgu,Manchester United,M,Patrick Dorgu,Manchester United,1364,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,62.91,58.32,74.96,63.86,5.7,10
+416,Matthijs de Ligt,Matthijs De Ligt,Manchester United,D,Matthijs de Ligt,Manchester United,1170,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,68.68,52.39,65.81,63.41,4.9,0
+417,Diogo Dalot Teixeira,Diogo Dalot,Manchester United,D,Diogo Dalot,Manchester United,2526,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,63.12,63.95,35.63,44.04,4.8,16
+418,Harry Maguire,Harry Maguire,Manchester United,D,Harry Maguire,Manchester United,1397,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,67.01,61.17,56.7,58.62,4.7,16
+419,Lisandro Martínez,Lisandro Martinez,Manchester United,D,Lisandro Martínez,Manchester United,967,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,32.3,66.24,41.07,45.23,4.8,9
+420,Leny Yoro,Leny Yoro,Manchester United,D,Leny Yoro,Manchester United,1732,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,55.02,46.1,57.62,55.06,4.8,11
+421,Ayden Heaven,Ayden Heaven,Manchester United,D,Ayden Heaven,Manchester United,938,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,38.61,55.05,54.76,53.2,4.3,3
+422,Noussair Mazraoui,Noussair Mazraoui,Manchester United,D,Noussair Mazraoui,Manchester United,858,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,36.9,44.35,61.72,55.76,4.3,6
+423,Luke Shaw,Luke Shaw,Manchester United,D,Luke Shaw,Manchester United,2969,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,35.91,51.08,40.68,42.28,4.2,12
+424,Harry Amass,Harry Amass,Manchester United,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+425,Tyler Fredricson,Tyler Fredricson,Manchester United,D,Tyler Fredricson,Manchester United,10,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.52,49.46,50.54,50.22,4.0,0
+426,Bruno Borges Fernandes,Bruno B.Fernandes,Manchester United,M,Bruno Fernandes,Manchester United,2796,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,81.34,86.02,45.32,74.44,11.7,35
+427,Bryan Mbeumo,Bryan Mbeumo,Manchester United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,7.9,44
+428,Matheus Santos Carneiro da Cunha,Matheus Cunha,Manchester United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,7.8,40
+429,Marcus Rashford,Marcus Rashford,Manchester United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.8,11
+430,Mason Mount,Mason Mount,Manchester United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.4,5
+431,Amad Diallo,Amad Amad,Manchester United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.7,7
+432,Kobbie Mainoo,Kobbie Mainoo,Manchester United,M,Kobbie Mainoo,Manchester United,1400,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,38.99,61.01,58.41,53.75,5.5,26
+433,Manuel Ugarte Ribeiro,Manuel Ugarte,Manchester United,M,Manuel Ugarte,Manchester United,900,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,38.1,39.29,73.57,47.5,5.0,0
+434,Jack Fletcher,Jack J.Fletcher,Manchester United,M,Jack Fletcher,Manchester United,107,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,46.15,46.31,52.33,47.77,4.9,0
+435,Shea Lacey,Shea Lacey,Manchester United,M,Shea Lacey,Manchester United,23,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,51.22,48.81,50.05,49.84,4.9,2
+436,Toby Collyer,Toby Collyer,Manchester United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+437,Bendito Mantato,Bendito Bendito Mantato,Manchester United,M,Bendito Mantato,Manchester United,15,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.28,49.45,49.24,49.35,4.4,0
+438,Tyler Fletcher,Tyler Fletcher,Manchester United,M,Tyler Fletcher,Manchester United,1,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.95,50.06,49.95,50.0,4.4,0
+439,Benjamin Sesko,Benjamin Šeško,Manchester United,F,Benjamin Šeško,Manchester United,1635,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,80.33,31.16,48.4,64.85,6.9,8
+440,Joshua Zirkzee,Joshua Zirkzee,Manchester United,F,Joshua Zirkzee,Manchester United,575,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,57.14,61.77,61.77,58.76,5.3,4
+441,Chido Obi,Chido Obi,Manchester United,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+405,Nico González Iglesias,Nico N.Gonzalez,Newcastle United,M,Nico González,Manchester City,1485,Token_Subset_And_Position,0.9,Transferred_Club,Verified transfer,Verified transfer,True,True,37.55,63.05,74.31,58.21,5.5,21
+442,Nick Pope,Nick Pope,Newcastle United,G,Nick Pope,Newcastle United,2147,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,50.37,56.16,4.9,0
+443,Mark Gillespie,Mark Gillespie,Newcastle United,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+444,Ewen Jaouen,Ewen Jaouen,Newcastle United,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,0
+445,Malick Thiaw,Malick Thiaw,Newcastle United,D,Malick Thiaw,Newcastle United,2694,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,85.79,47.67,70.54,67.49,4.9,16
+446,Fabian Schär,Fabian Schär,Newcastle United,D,Fabian Schär,Newcastle United,1091,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,64.71,56.35,67.8,65.2,4.9,12
+447,Sven Botman,Sven Botman,Newcastle United,D,Sven Botman,Newcastle United,1568,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,68.49,66.69,73.15,71.39,5.0,26
+448,Dan Burn,Dan Burn,Newcastle United,D,Dan Burn,Newcastle United,2020,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,56.45,39.64,77.55,67.86,4.8,9
+449,Lewis Hall,Lewis Hall,Newcastle United,D,Lewis Hall,Newcastle United,1909,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,62.86,72.08,44.43,51.8,5.3,42
+450,Tino Livramento,Tino Livramento,Newcastle United,D,Tino Livramento,Newcastle United,1328,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,29.96,54.21,25.25,31.51,4.8,4
+451,Alex Murphy,Alex A.Murphy,Newcastle United,D,Alex Murphy,Newcastle United,1,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.95,50.05,50.06,50.04,4.0,0
+453,Harvey Barnes,Harvey Barnes,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.1,42
+454,Anthony Elanga,Anthony Elanga,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.0,21
+456,Jacob Ramsey,Jacob J.Ramsey,Newcastle United,M,Jacob Ramsey,Newcastle United,1256,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,51.66,41.68,45.84,45.71,4.8,6
+457,Jacob Murphy,Jacob J.Murphy,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.9,11
+458,Joelinton Cássio Apolinário de Lira,Joelinton Cássio Joelinton,Newcastle United,M,Joelinton,Newcastle United,1863,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,57.71,39.08,73.76,53.34,5.4,6
+459,Lewis Miley,Lewis L.Miley,Newcastle United,M,Lewis Miley,Newcastle United,1494,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,44.35,70.8,69.02,62.42,5.5,15
+460,Joe Willock,Joe Willock,Newcastle United,M,Joe Willock,Newcastle United,884,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,50.94,47.4,45.28,47.94,5.0,29
+461,Bazoumana Touré,Bazoumana Touré,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.7,11
+462,Sean Steur,Sean Steur,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.8,10
+463,Nick Woltemade,Nick Woltemade,Newcastle United,F,Nick Woltemade,Newcastle United,1726,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,51.63,58.13,56.83,53.77,5.9,4
+464,Yoane Wissa,Yoane Wissa,Newcastle United,F,Yoane Wissa,Newcastle United,483,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,56.05,41.18,41.53,50.88,6.0,20
+465,William Osula,William Osula,Newcastle United,F,William Osula,Newcastle United,641,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,67.5,33.73,32.08,55.52,5.8,16
+466,Sean Neave,Sean Neave,Newcastle United,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+559,Aladji Bamba,Aladji Bamba,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.8,3
+567,Lukás Hornícek,Lukás Horníček,Newcastle United,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,27
+593,Amar Dedic,Amar Dedić,Newcastle United,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,26
+609,Leo Shahar,Leo Shahar,Newcastle United,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+634,Matias Fernandez-Pardo,Matias Fernandez-Pardo,Newcastle United,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.9,7
+659,Mason Miley,Mason Miley,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+663,Miodrag Pivas,Miodrag Pivas,Newcastle United,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+664,Vakhtang Salia,Vakhtang Salia,Newcastle United,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+665,Michael Mills,Michael Mills,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+666,Kyran Thompson,Kyran Thompson,Newcastle United,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+167,Liam Delap,Liam Delap,Nottingham Forest,F,Liam Delap,Chelsea,1032,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,49.21,28.05,39.16,42.91,5.4,17
+201,Daniel Muñoz Mejía,Daniel Muñoz,Nottingham Forest,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,15
+467,Matz Sels,Matz Sels,Nottingham Forest,G,Matz Sels,Nottingham Forest,2397,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,66.07,62.7,5.0,21
+468,John Victor Maciel Furtado,John Victor John,Nottingham Forest,G,John Victor,Nottingham Forest,438,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,20.0,40.0,36.04,39.9,4.4,0
+469,Neco Williams,Neco N.Williams,Nottingham Forest,D,Neco Williams,Nottingham Forest,2936,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,82.65,59.73,39.84,48.1,4.9,32
+470,Felipe Rodrigues da Silva,Felipe Morato,Nottingham Forest,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,0
+471,Nikola Milenković,Nikola Milenković,Nottingham Forest,D,Nikola Milenković,Nottingham Forest,3105,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,33.57,27.0,56.79,48.51,5.4,12
+472,Murillo Costa dos Santos,Murillo Murillo,Nottingham Forest,D,Murillo,Nottingham Forest,2133,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,56.16,37.88,58.54,54.17,5.5,31
+473,Ola Aina,Ola Aina,Nottingham Forest,D,Ola Aina,Nottingham Forest,1590,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,39.72,27.81,51.98,45.92,4.2,9
+474,Jair Paula da Cunha Filho,Jair Jair Cunha,Nottingham Forest,D,Jair,Nottingham Forest,357,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,44.14,38.85,50.56,47.58,4.4,16
+475,Nicolò Savona,Nicolò Savona,Nottingham Forest,D,Nicolò Savona,Nottingham Forest,1026,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,73.93,32.39,29.38,34.44,4.5,0
+476,Omar Richards,Omar O.Richards,Nottingham Forest,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,3.9,0
+477,Zach Abbott,Zach Abbott,Nottingham Forest,D,Zach Abbott,Nottingham Forest,165,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,43.17,43.13,51.01,48.65,4.0,0
+478,Luca Netz,Luca Netz,Nottingham Forest,D,Luca Netz,Nottingham Forest,161,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,43.31,48.59,49.01,48.36,4.4,4
+479,Tyler Bindon,Tyler Bindon,Nottingham Forest,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+480,Morgan Gibbs-White,Morgan Gibbs-White,Nottingham Forest,M,Morgan Gibbs-White,Nottingham Forest,2930,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,85.34,47.81,28.14,54.15,7.9,34
+482,Callum Hudson-Odoi,Callum Hudson-Odoi,Nottingham Forest,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.7,4
+483,Dan Ndoye,Dan Ndoye,Nottingham Forest,M,Dan Ndoye,Nottingham Forest,1176,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,47.84,39.48,48.11,44.15,5.5,29
+484,Omari Hutchinson,Omari Hutchinson,Nottingham Forest,M,Omari Hutchinson,Nottingham Forest,1520,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,59.87,68.84,30.56,56.58,5.4,0
+485,Dilane Bakwa,Dilane Bakwa,Nottingham Forest,M,Dilane Bakwa,Nottingham Forest,468,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,51.63,64.17,35.99,53.36,5.5,0
+486,James McAtee,James McAtee,Nottingham Forest,M,James McAtee,Nottingham Forest,279,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,41.77,42.9,47.86,43.8,5.5,26
+487,Nicolás Domínguez,Nicolás Dominguez,Nottingham Forest,M,Nicolás Domínguez,Nottingham Forest,1053,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,53.34,45.64,67.2,53.34,4.8,4
+488,Ibrahim Sangaré,Ibrahim I.Sangaré,Nottingham Forest,M,Ibrahim Sangaré,Nottingham Forest,1995,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,43.44,46.72,69.36,51.39,4.7,6
+489,Ryan Yates,Ryan Yates,Nottingham Forest,M,Ryan Yates,Nottingham Forest,559,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,40.51,53.65,66.97,53.04,4.4,1
+490,Chris Wood,Chris Wood,Nottingham Forest,F,Chris Wood,Nottingham Forest,757,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,59.27,30.78,41.18,50.34,5.7,8
+491,Igor Jesus Maciel da Cruz,Igor Jesus Igor Jesus,Nottingham Forest,F,Igor Jesus,Nottingham Forest,2063,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,46.9,59.31,68.27,52.14,5.6,12
+493,Arnaud Kalimuendo,Arnaud Kalimuendo,Nottingham Forest,F,Arnaud Kalimuendo,Nottingham Forest,106,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.01,47.55,51.3,48.87,5.4,4
+558,Xaver Schlager,Xaver Schlager,Nottingham Forest,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,24
+581,Ousmane Diomande,Ousmane Diomande,Nottingham Forest,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,10
+590,Steven Benda,Steven Benda,Nottingham Forest,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+112,Jan Paul van Hecke,Jan Paul Van Hecke,Tottenham Hotspur,D,Jan Paul van Hecke,Brighton,2941,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,77.9,77.9,70.12,72.45,5.0,53
+147,Tosin Adarabioyo,Tosin Tosin,Tottenham Hotspur,D,Tosin Adarabioyo,Chelsea,796,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,35.55,70.82,71.88,68.03,4.3,3
+401,Omar Marmoush,Omar Marmoush,Tottenham Hotspur,F,Omar Marmoush,Manchester City,611,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,50.6,67.82,44.19,54.26,7.0,22
+403,Sávio Moreira de Oliveira,Sávio Sávio,Tottenham Hotspur,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.4,10
+455,Sandro Tonali,Sandro Tonali,Tottenham Hotspur,M,Sandro Tonali,Newcastle United,2400,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,39.96,63.85,47.23,52.53,5.3,33
+494,Guglielmo Vicario,Guglielmo Vicario,Tottenham Hotspur,G,Guglielmo Vicario,Tottenham Hotspur,2790,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,35.67,39.81,4.5,0
+495,Brandon Austin,Brandon Austin,Tottenham Hotspur,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+496,Antonín Kinský,Antonín Kinsky,Tottenham Hotspur,G,Antonín Kinský,Tottenham Hotspur,360,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,20.0,40.0,38.27,43.26,4.4,38
+497,Martin Dubravka,Martin Dubravka,Tottenham Hotspur,G,Martin Dúbravka,Burnley,3150,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,20.0,40.0,61.87,49.75,4.0,0
+498,Marcos Senesi Barón,Marcos Senesi,Tottenham Hotspur,D,Marcos Senesi,Bournemouth,3020,Token_Subset_And_Position,0.9,Transferred_Club,Verified transfer,Verified transfer,True,True,51.52,85.91,83.3,80.64,5.7,5
+499,Pedro Porro Sauceda,Pedro Pedro Porro,Tottenham Hotspur,D,Pedro Porro,Tottenham Hotspur,2528,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,61.04,67.29,38.13,46.25,5.3,11
+500,Cristian Romero,Cristian Romero,Tottenham Hotspur,D,Cristian Romero,Tottenham Hotspur,1872,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,79.19,66.98,75.37,74.08,5.0,0
+502,Andrew Robertson,Andrew Robertson,Tottenham Hotspur,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.3,36
+503,Micky van de Ven,Micky Van de Ven,Tottenham Hotspur,D,Micky van de Ven,Tottenham Hotspur,2773,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,76.66,50.64,30.17,38.91,5.0,30
+505,Djed Spence,Djed Spence,Tottenham Hotspur,D,Djed Spence,Tottenham Hotspur,1946,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,61.78,47.49,26.63,34.32,4.5,0
+506,Destiny Udogie,Destiny Udogie,Tottenham Hotspur,D,Destiny Udogie,Tottenham Hotspur,1098,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,41.46,54.5,26.87,33.86,4.4,10
+507,Ashley Phillips,Ashley Phillips,Tottenham Hotspur,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+508,Ben Davies,Ben Davies,Tottenham Hotspur,D,Ben Davies,Tottenham Hotspur,138,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,56.65,47.26,54.54,53.3,3.9,8
+509,Jun'ai Byfield,Jun'ai Byfield,Tottenham Hotspur,D,Jun'ai Byfield,Tottenham Hotspur,10,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.52,49.68,49.56,49.58,4.0,0
+510,James Rowswell,James Rowswell,Tottenham Hotspur,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+511,João Victor de Souza Menezes,João Victor Souza,Tottenham Hotspur,D,Souza,Tottenham Hotspur,144,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,55.1,43.42,43.65,44.75,4.0,0
+512,Mohammed Kudus,Mohammed Kudus,Tottenham Hotspur,M,Mohammed Kudus,Tottenham Hotspur,1545,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,59.63,65.05,33.45,55.52,6.6,26
+513,Xavi Simons,Xavi Xavi,Tottenham Hotspur,M,Xavi Simons,Tottenham Hotspur,1769,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,62.31,75.25,39.58,62.45,5.9,0
+514,Mathys Tel,Mathys Tel,Tottenham Hotspur,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.6,23
+515,James Maddison,James Maddison,Tottenham Hotspur,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.2,14
+516,Rodrigo Bentancur,Rodrigo Bentancur,Tottenham Hotspur,M,Rodrigo Bentancur,Tottenham Hotspur,1639,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,37.7,41.7,76.13,49.11,5.4,13
+517,Wilson Odobert,Wilson Odobert,Tottenham Hotspur,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.5,0
+518,Pape Matar Sarr,Pape Matar P.M.Sarr,Tottenham Hotspur,M,Pape Matar Sarr,Tottenham Hotspur,1360,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,55.73,57.16,73.78,60.89,4.9,0
+519,Conor Gallagher,Conor Gallagher,Tottenham Hotspur,M,Conor Gallagher,Tottenham Hotspur,934,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,47.57,42.97,49.51,45.99,5.3,14
+520,Lucas Bergvall,Lucas Bergvall,Tottenham Hotspur,M,Lucas Bergvall,Tottenham Hotspur,970,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,56.18,48.02,44.07,49.48,5.3,6
+521,Dejan Kulusevski,Dejan Kulusevski,Tottenham Hotspur,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,6.5,3
+522,Archie Gray,Archie Gray,Tottenham Hotspur,M,Archie Gray,Tottenham Hotspur,1492,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,50.89,45.84,52.67,49.06,4.9,22
+523,Mikey Moore,Mikey Moore,Tottenham Hotspur,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,3
+524,Callum Olusesi,Callum Olusesi,Tottenham Hotspur,M,Callum Olusesi,Tottenham Hotspur,14,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,49.33,49.8,49.29,49.53,4.4,0
+525,Mateus Fernandes,Mateus Fernandes,Tottenham Hotspur,M,Mateus Fernandes,West Ham,2754,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,41.03,53.95,65.79,53.03,5.6,19
+526,Dominic Solanke-Mitchell,Dominic Solanke,Tottenham Hotspur,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.8,21
+527,Richarlison de Andrade,Richarlison Richarlison,Tottenham Hotspur,F,Richarlison,Tottenham Hotspur,1704,Token_Subset_And_Position,0.9,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,67.82,60.04,75.59,66.65,5.9,2
+528,Dane Scarlett,Dane Scarlett,Tottenham Hotspur,F,Dane Scarlett,Tottenham Hotspur,21,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,48.94,49.02,48.91,48.96,4.5,0
+578,Mykhailo Mudryk,Mykhailo Mudryk,Tottenham Hotspur,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.3,1
+601,Luca Williams-Barnett,Luca Williams-Barnett,Tottenham Hotspur,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,1
+501,Kevin Danso,Kevin Danso,Sunderland,D,Kevin Danso,Tottenham Hotspur,1237,Exact_Name_And_Position,1.0,Transferred_Club,Verified transfer,Verified transfer,True,True,47.22,51.14,77.96,69.52,5.0,1
+529,Robin Roefs,Robin Roefs,Sunderland,G,Robin Roefs,Sunderland,2880,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,20.0,40.0,66.84,64.12,4.9,24
+530,Anthony Patterson,Anthony Patterson,Sunderland,G,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+531,Melker Ellborg,Melker Ellborg,Sunderland,G,Melker Ellborg,Sunderland,270,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,20.0,40.0,59.23,58.82,4.4,0
+532,Daniel Ballard,Daniel Ballard,Sunderland,D,Daniel Ballard,Sunderland,2148,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,78.87,42.24,81.25,73.21,4.7,14
+533,Nordi Mukiele,Nordi Mukiele,Sunderland,D,Nordi Mukiele,Sunderland,2517,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,69.35,66.02,72.26,70.72,5.4,20
+534,Trai Hume,Trai Hume,Sunderland,D,Trai Hume,Sunderland,2798,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,60.9,22.43,39.1,37.95,4.2,21
+535,Omar Alderete,Omar Alderete,Sunderland,D,Omar Alderete,Sunderland,2689,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,68.84,33.7,73.49,65.07,4.8,1
+536,Reinildo Mandava,Reinildo Reinildo,Sunderland,D,Reinildo Mandava,Sunderland,1699,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,28.39,33.93,48.71,43.72,4.4,16
+537,Jenson Seelt,Jenson Seelt,Sunderland,D,Jenson Seelt,Sunderland,134,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,44.29,52.67,52.31,51.58,4.5,0
+538,Leo Fuhr Hjelde,Leo Fuhr Hjelde,Sunderland,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.0,0
+539,Luke O'Nien,Luke O'Nien,Sunderland,D,Luke O'Nien,Sunderland,434,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,38.14,38.88,40.35,39.84,3.9,15
+540,Arthur Masuaku,Arthur Masuaku,Sunderland,D,Arthur Masuaku,Sunderland,127,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,47.87,45.28,49.55,48.53,4.0,0
+541,Thomas Meunier,Thomas Meunier,Sunderland,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,16
+542,Enzo Le Fée,Enzo E.Le Fée,Sunderland,M,Enzo Le Fée,Sunderland,2675,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,57.84,66.75,63.18,63.18,5.7,35
+543,Habib Diarra,Habib Diarra,Sunderland,M,Habib Diarra,Sunderland,1365,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,64.06,30.2,30.77,40.5,5.3,7
+544,Granit Xhaka,Granit Xhaka,Sunderland,M,Granit Xhaka,Sunderland,2633,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,34.74,74.13,69.87,61.25,5.4,32
+545,Noah Sadiki,Noah Sadiki,Sunderland,M,Noah Sadiki,Sunderland,2637,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,30.47,28.34,52.13,34.93,4.8,20
+546,Simon Adingra,Simon Adingra,Sunderland,M,Simon Adingra,Sunderland,665,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,48.99,38.67,47.77,44.04,4.9,0
+547,Romaine Mundle,Romaine Mundle,Sunderland,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.8,1
+548,Chris Rigg,Chris Rigg,Sunderland,M,Chris Rigg,Sunderland,759,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,52.61,39.98,42.16,44.31,4.8,7
+549,Chemsdine Talbi,Chemsdine Talbi,Sunderland,M,Chemsdine Talbi,Sunderland,1452,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,66.76,28.83,26.48,39.62,5.2,3
+550,Djiamgone Jocelin Ta Bi,Djiamgone Jocelin Ta Jocelin.T,Sunderland,M,Jocelin Ta Bi,Sunderland,39,Token_Subset_And_Position,0.9,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,48.18,48.06,48.77,48.28,4.9,1
+551,Nilson Angulo,Nilson N.Angulo,Sunderland,M,Nilson Angulo,Sunderland,264,Exact_Name_And_Position,1.0,Retained_Low_Minutes,Player without sufficient historical information,Player without sufficient historical information,False,True,54.1,39.31,55.83,47.88,5.0,22
+552,Brian Brobbey,Brian Brobbey,Sunderland,F,Brian Brobbey,Sunderland,1716,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,47.73,36.04,41.88,44.22,5.7,28
+553,Wilson Isidor,Wilson Isidor,Sunderland,F,Wilson Isidor,Sunderland,1131,Exact_Name_And_Position,1.0,Retained_Same_Club,Verified same-club match,Verified same-club match,False,True,62.96,24.91,45.86,51.74,5.4,18
+612,Dayann Méthalie,Dayann Methalie,Sunderland,D,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,0
+613,Jules Ahoka,Jules Ahoka,Sunderland,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.4,1
+646,Malick Fofana,Malick Fofana,Sunderland,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.4,5
+651,Juan Angulo,Juan J.Angulo,Sunderland,F,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,4.5,1
+668,Tymur Tutierov,Tymur Tutierov,Sunderland,M,,,0,None,0.0,Unmatched_New_Signing,Unmatched player,Unmatched player,False,False,50.0,50.0,50.0,50.0,5.0,2

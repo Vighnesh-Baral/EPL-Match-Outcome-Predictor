@@ -1,0 +1,17 @@
+Model,Feature_Group,Val_Accuracy,Val_Log_Loss,Val_Brier_Score,Test_Accuracy,Test_Macro_F1,Test_Draw_F1,Test_Log_Loss,Test_Brier_Score
+Dummy Baseline (Most Frequent),N/A,46.05,19.4446,1.0789,41.71,19.62,0.0,21.0097,1.1658
+Logistic_Regression,Model_A_Team_Strength,57.63,0.9424,0.5569,49.61,36.84,0.0,1.0259,0.6162
+Random_Forest,Model_A_Team_Strength,56.84,0.9468,0.5602,48.55,36.25,1.01,1.0373,0.6232
+HistGradientBoosting,Model_A_Team_Strength,50.26,1.0204,0.607,45.13,35.48,6.27,1.0819,0.6491
+Logistic_Regression,Model_B_Strength_And_Form,57.11,0.9466,0.5588,50.26,37.37,0.0,1.0287,0.6177
+Random_Forest,Model_B_Strength_And_Form,56.32,0.9474,0.5598,48.68,36.49,1.01,1.0357,0.6222
+HistGradientBoosting,Model_B_Strength_And_Form,51.05,1.0156,0.597,45.79,36.7,8.33,1.0736,0.645
+Logistic_Regression,Model_C_Strength_Form_Historical,59.47,0.9252,0.5438,50.66,37.72,0.0,1.0174,0.6108
+Random_Forest,Model_C_Strength_Form_Historical,57.89,0.9386,0.5535,50.0,37.46,0.0,1.0183,0.6101
+HistGradientBoosting,Model_C_Strength_Form_Historical,53.68,1.0062,0.5896,47.89,38.72,8.26,1.0722,0.6357
+Logistic_Regression,Model_D_Full_Architecture,60.53,0.9258,0.5441,50.39,37.51,0.0,1.0177,0.611
+Random_Forest,Model_D_Full_Architecture,59.47,0.9388,0.5533,50.39,38.02,1.01,1.0216,0.6121
+HistGradientBoosting,Model_D_Full_Architecture,54.74,0.9996,0.585,46.45,38.21,11.34,1.07,0.6385
+Soft Voting Ensemble (LR + RF + HistGB),Model_D_Full_Architecture,59.74,0.9332,0.5492,49.34,37.6,2.94,1.0179,0.6108
+Calibrated Ensemble (Sigmoid - Standard Argmax),Model_D_Full_Architecture,60.26,0.9291,0.5464,49.21,36.89,1.01,1.0199,0.612
+Calibrated Ensemble (Draw-Tuned tau=0.23),Model_D_Full_Architecture,60.26,0.9291,0.5464,47.24,42.47,22.61,1.0199,0.612

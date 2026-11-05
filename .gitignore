@@ -1,24 +1,24 @@
-
-# Python virtual environment
+# Python
 venv/
 .venv/
-
-# Python cache files
 __pycache__/
 *.py[cod]
+.pytest_cache/
 
-# Jupyter Notebook temporary files
+# Jupyter
 .ipynb_checkpoints/
 
-# Environment variables and secrets
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Environment variables
 .env
 .env.*
+!.env.example
 
-# IDE and operating system files
+# IDE and OS
 .vscode/
+.idea/
 .DS_Store
 Thumbs.db
-
-# Generated model files
-models/*.pkl
-models/*.joblib
