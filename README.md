@@ -1,14 +1,14 @@
-# PitchIQ â€” EPL 2026/27 Match Predictor (Version 2.3)
+# PitchIQ — EPL 2026/27 Match Predictor (Version 2.3)
 
-A local Premier League predictor combining a recency-weighted historical classifier, a current-season Poisson branch, 2026/27 team/player ratings, and head-to-head context.
+PitchIQ is a local Premier League football intelligence platform combining a recency-weighted historical machine learning model, a current-season Poisson prediction branch, 2026/27 team and player ratings, and head-to-head analysis.
 
-## Model design
+## Model Design
 
-### 1. Recency-weighted historical learning
+### 1. Recency-Weighted Historical Learning
 
-The model trains on 2015/16â€“2025/26 fixture results. The agreed priority hierarchy is represented through initial sample weights:
+The historical model trains on Premier League match results from 2015/16 to 2025/26. Each season receives a sample weight reflecting its relative importance:
 
-| Season | Weight |
+| Season | Sample Weight |
 |---|---:|
 | 2015/16 | 0.25 |
 | 2016/17 | 0.27 |
@@ -21,81 +21,147 @@ The model trains on 2015/16â€“2025/26 fixture results. The agreed priority 
 | 2023/24 | 0.72 |
 | 2024/25 | 0.86 |
 | 2025/26 | 1.00 |
-| 2026/27 (when a result file is added) | 1.15 |
+| 2026/27 | 1.15 (when verified match results are available) |
 
-These weights express the intended priority order; they are starting values, not proven optimal coefficients. The model comparison report should be used to revise them only after further validation.
+These weights represent the intended priority hierarchy. They are initial design choices, not empirically proven optimal values.
 
-Historical pre-match features are reconstructed chronologically from each team's season-to-date points, goals for/against, recent form and the latest ten prior head-to-head meetings. Matches on the same date are all featurised before any results from that date are added, avoiding same-day leakage.
+Historical pre-match features are reconstructed chronologically using:
+- Season-to-date points and goal statistics.
+- Recent team form.
+- The latest ten head-to-head meetings available before the target fixture.
 
-### 2. Model comparison and validation
+Matches played on the same date are featurised before any results from that date are added. This prevents results from one match on a given date from leaking into the features of another match on that date.
 
-The training pipeline compares:
+### 2. Model Comparison and Validation
+
+The training pipeline compares four approaches:
 
 - Multinomial Logistic Regression
 - Random Forest
 - XGBoost
 - Poisson goals baseline
 
-Chronological split:
+**Chronological data split:**
 
-- Training: 2015/16â€“2021/22
-- Validation/model selection: 2022/23â€“2023/24
-- Untouched test period: 2024/25â€“2025/26
+| Dataset | Seasons | Purpose |
+|---|---|---|
+| Training | 2015/16–2021/22 | Model training |
+| Validation | 2022/23–2023/24 | Model selection and blend-weight tuning |
+| Testing | 2024/25–2025/26 | Out-of-sample evaluation |
 
-The validation period selects the classifier and the classifier/Poisson blend weight using log loss. The selected architecture is then tested on 2024/25â€“2025/26 before being refitted on all available historical seasons for production. Reports include accuracy, log loss and multiclass Brier score. Test metrics are not guarantees of 2026/27 accuracy.
+The validation period is used to select the classifier and determine the classifier/Poisson blending weight using log loss.
 
-### 3. Current 2026/27 inputs
+The selected architecture is evaluated on the untouched test period before being refitted using all available historical seasons for production.
 
-- Current FBref team statistics and league table power the current Attack, Midfield, Defence and Goalkeeping indices.
-- Current FPL points and roster information feed position-specific contribution indices and squad depth proxies.
-- The current team ratings drive the current-season Poisson branch and match-specific goal expectations.
-- Home advantage remains a separate explicit factor (`HOME_ADVANTAGE_FACTOR = 1.06`). The classifier also learns the historical home/away outcome asymmetry from match results.
-- H2H appears in the interface and enters the historical classifier as a limited pre-match feature. It is not used as a standalone predictor.
+Evaluation reports include accuracy, log loss and multiclass Brier score. Historical test performance should not be interpreted as a guarantee of future prediction accuracy.
 
-The supplied 2026/27 snapshot shows nine matches played per club, but has aggregate standings/team statistics rather than a fixture-by-fixture result file. Therefore, 2026/27 cannot yet be included in supervised training or prospectively validated. Its current data still has the highest priority in the current-season ratings and Poisson branch.
+### 3. Current 2026/27 Inputs
 
-## Current data limitations
+The current-season intelligence layer uses:
 
-The current FPL snapshot contains player total points, event points, cost, club and position, but not complete player minutes, starts, goals, assists, xG, tackles or interceptions. The player metric remains an **FPL contribution index**, not a complete football ability grade. The 4-3-3 and reserve group remain quality proxies, not predicted matchday lineups; injury/suspension availability is not present.
+- **FBref team statistics:** Current team performance and league standings contribute to Attack, Midfield, Defence and Goalkeeping indices.
+- **Fantasy Premier League data:** Current player points and squad information contribute to position-specific player ratings and squad-depth proxies.
+- **Current team ratings:** These feed the Poisson prediction branch and influence match-specific expected goals.
+- **Home advantage:** An explicit factor of `HOME_ADVANTAGE_FACTOR = 1.06` is applied separately. The historical classifier also learns home/away outcome patterns from historical results.
+- **Head-to-head:** H2H information is displayed in the interface and included as a limited historical model feature. It is not used as a standalone prediction method.
 
-The team-rating blends and current rating-to-goal multipliers are transparent starting assumptions. The historical blend weight is selected on a chronological validation period, but the current 2026/27 snapshot adjustment still requires prospective evaluation as new fixture results arrive.
+**2026/27 data coverage:** The supplied league snapshot contains nine matches played per club. However, the current match-results CSV contains only one verified 2026/27 fixture. Consequently, the current-season data cannot yet support comprehensive supervised training or prospective validation.
 
-## Run locally on Windows
+The current-season team and player statistics still contribute to the ratings and Poisson branch. They should not be confused with a complete fixture-by-fixture results archive.
+
+## Current Data Limitations
+
+The current FPL snapshot contains:
+- Player total points.
+- Event points.
+- Player cost.
+- Club.
+- Playing position.
+
+It does not provide complete player-level information such as minutes played, starts, goals, assists, expected goals (xG), tackles or interceptions.
+
+Therefore, the player metric is an **FPL contribution index**, not a comprehensive measure of football ability.
+
+The 4-3-3 squad structure and reserve group are quality proxies. They are not predicted matchday lineups. The current dataset also does not contain injury or suspension availability information.
+
+Team-rating blends and current rating-to-goal multipliers are transparent starting assumptions. Although the historical model's blend weight is selected using chronological validation, the current-season rating adjustments still require prospective evaluation as more 2026/27 results become available.
+
+## Installation and Setup (Windows)
+
+### 1. Clone the repository
+
+```powershell
+git clone https://github.com/Vighnesh-Baral/EPL-Match-Outcome-Predictor.git
+cd EPL-Match-Outcome-Predictor
+```
+
+### 2. Create and activate a virtual environment
 
 ```powershell
 py -m venv venv
 .\venv\Scripts\Activate.ps1
+```
+
+### 3. Install dependencies
+
+```powershell
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+### 4. Train the historical model
+
+```powershell
 python -m src.train
+```
+
+### 5. Start the application
+
+```powershell
 python run.py
 ```
 
-Open **http://127.0.0.1:8000**. Stop the server with `Ctrl+C`.
+Open the application at:
 
-The app also auto-trains the model once if `Models/historical_predictor_v2.joblib` is missing. Explicitly running `python -m src.train` rebuilds it and refreshes the reports.
+**http://127.0.0.1:8000**
 
-## Add 2026/27 match results later
+Stop the server using `Ctrl+C`.
 
-When a completed-match CSV is available, add it to `Data/Raw/2026_27/` using one of these names:
+The application can also train the model automatically if `Models/historical_predictor_v2.joblib` is missing. Running `python -m src.train` explicitly rebuilds the model and refreshes the evaluation reports.
+
+## Adding 2026/27 Match Results
+
+To incorporate additional verified 2026/27 results, add them to:
+
+`Data/Raw/2026_27/match_results_2026_27.csv`
+
+Accepted filenames:
 
 - `match_results_2026_27.csv`
 - `season-2627.csv`
 - `matches_2026_27.csv`
 
-Required columns: `Date`, `HomeTeam`, `AwayTeam`, `FTR`, `FTHG`, `FTAG`. The training loader will assign those results the 2026/27 weight of 1.15 and refit the production model. Do not insert aggregate table rows as if they were fixture results.
+Required columns:
 
-## API endpoints
+`Date, HomeTeam, AwayTeam, FTR, FTHG, FTAG`
 
-- `GET /api/health`
-- `GET /api/overview`
-- `GET /api/teams`
-- `GET /api/teams/{team_name}`
-- `POST /api/predict`
-- `GET /api/h2h?home_team=Arsenal&away_team=Liverpool&limit=10`
-- `GET /docs`
+The data loader assigns 2026/27 results a sample weight of 1.15 and includes them in historical feature generation and model training.
 
-Prediction request:
+Only completed, verified fixture results should be added. Do not treat aggregate league-table statistics as individual match results.
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/health` | Application and data health |
+| GET | `/api/overview` | League and model overview |
+| GET | `/api/teams` | Current team ratings |
+| GET | `/api/teams/{team_name}` | Individual team information and roster |
+| POST | `/api/predict` | Match outcome prediction |
+| GET | `/api/h2h` | Head-to-head match history |
+| GET | `/docs` | Interactive API documentation |
+
+### Example Prediction Request
 
 ```json
 {
@@ -104,50 +170,144 @@ Prediction request:
 }
 ```
 
-## Rebuild current ratings and run tests
+The prediction endpoint accepts the home and away club names and returns the model's prediction output.
+
+## Rebuilding Ratings and Running Tests
+
+Rebuild current-season team ratings:
 
 ```powershell
 python -m src.team_strength
+```
+
+Run the automated test suite:
+
+```powershell
 pytest -q
 ```
 
-Model evaluation outputs are written to `reports/model_evaluation_v2.json`, `reports/model_comparison_v2.csv` and `reports/model_test_results_v2.csv`.
+Model evaluation outputs are stored in:
 
-## Version 2.1 update: current-season H2H and prior-season stabilization
+- `reports/model_evaluation_v2.json`
+- `reports/model_comparison_v2.csv`
+- `reports/model_test_results_v2.csv`
 
-- `Data/Raw/2026_27/match_results_2026_27.csv` stores verified completed 2026/27 results. The first verified H2H addition is Brighton 3-0 Arsenal on 2026-09-19. Add further completed fixtures to this same CSV using `Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR`; the loader validates and automatically includes them in H2H and historical features.
-- **Coverage note:** this archive currently contains one verified 2026/27 fixture row, not a complete 2026/27 match log. Do not interpret the file as containing all 87/90 completed matches.
-- Overall club strength now blends the current 2026/27 rating with a 2025/26 Premier League prior. The prior starts at 15% and decays exponentially as current-season matches accumulate (`0.15 * exp(-MP / 18)`). Clubs without a 2025/26 Premier League record receive a neutral prior of 50 rather than fabricated lower-division performance.
-- This 15% prior is an initial transparent regularization choice, not an empirically optimized parameter. It should be tuned using chronological backtests.
+## Version 2.1 — H2H and Previous-Season Stabilisation
 
-## Version 2.3 UI â€” editorial football intelligence workspace
+The following improvements were introduced in Version 2.1:
 
-The React + Vite frontend in `frontend/` now has a scroll-led product landing page and a separate analytics workspace. The visual system follows the supplied pastel/editorial reference: warm ivory, charcoal, sage and restrained terracotta, with football photography and purposeful scroll reveals. The workspace uses the same visual language and remains data-led rather than decorative.
+- The 2026/27 match-results file supports verified current-season results in H2H and historical feature generation.
+- The first verified current-season H2H addition is Brighton 3–0 Arsenal on 19 September 2026.
+- The archive currently contains only one verified 2026/27 fixture row. It must not be interpreted as a complete current-season match log.
+- Overall team strength incorporates a 2025/26 Premier League prior alongside the current 2026/27 rating.
+- The previous-season prior starts at 15% and decays exponentially as current-season matches accumulate:
 
-### Implemented screens
+  `0.15 × exp(-MP / 18)`
 
-- **Overview:** API-powered league snapshot, team-strength index, points leaders and model summary.
-- **Match predictor:** live `POST /api/predict` request with outcome probabilities, expected goals, current team-rating comparison and model blend details.
-- **Team intelligence:** club directory and detail panel from `GET /api/teams/{team_name}`.
-- **Player intelligence:** searchable roster and filters; player rows are collected from the existing team-detail endpoints using only available FPL fields.
-- **Head to head:** meeting history from `GET /api/h2h`.
-- **Model performance:** historical holdout accuracy, log loss and Brier score from the existing overview response.
+- Clubs without a 2025/26 Premier League record receive a neutral prior of 50 rather than an invented lower-division rating.
 
-The landing page and workspace use initials-based club identifiers, not Premier League or club crests. Model metrics are labelled as historical holdout results and are not described as future-performance guarantees.
+The 15% starting contribution is a transparent regularisation choice, not an empirically optimised parameter. It should be evaluated using chronological backtesting.
 
-### Run the frontend in development
+## Version 2.3 — Editorial Football Intelligence Workspace
 
-1. Start the backend from the project root: `python run.py`.
-2. Open a second terminal in `frontend/`.
-3. Run `npm install` and then `npm run dev`.
-4. Open `http://127.0.0.1:5173`.
+Version 2.3 introduces a React + Vite frontend with a scroll-led product landing page and a separate analytics workspace.
 
-Vite proxies `/api` requests to FastAPI at `http://127.0.0.1:8000`, so the two development servers communicate over the API.
+The visual system uses:
+- Warm ivory backgrounds.
+- Charcoal typography.
+- Sage green accents.
+- Restrained terracotta details.
+- Football photography.
+- Purposeful scroll-based reveals and interactive elements.
 
-### Build for the FastAPI app
+The application uses original initials-based club identifiers rather than official Premier League or club crests.
 
-From `frontend/`, run `npm run build`. The production bundle is written to `app/static/`; FastAPI serves it at `http://127.0.0.1:8000`.
+### Implemented Screens
 
-### Photography
+**1. Overview**
+- API-powered league snapshot.
+- Team-strength leaderboard.
+- Points leaders.
+- Model information and performance summary.
 
-Football photographs are sourced from Franco Monsalvo's Pexels pages. Source links and licence notes are recorded in `ASSET_CREDITS.md` and `frontend/README.md`. Pexels permits free use under its licence, but any third-party rights in people, trademarks or brands depicted in photos remain relevant. The photos are served from the Pexels image CDN, so the browser needs an internet connection to display them.
+**2. Match Predictor**
+- Live predictions through `POST /api/predict`.
+- Home, draw and away probabilities.
+- Expected goals.
+- Team-rating comparison.
+- Model blending information.
+
+**3. Team Intelligence**
+- Club directory.
+- Individual team ratings.
+- Team statistics and squad information.
+
+**4. Player Intelligence**
+- Searchable player roster.
+- Position-based filters.
+- Available FPL contribution metrics.
+
+**5. Head-to-Head**
+- Historical meetings between selected clubs.
+- Match history retrieved through `GET /api/h2h`.
+
+**6. Model Performance**
+- Historical holdout accuracy.
+- Log loss.
+- Multiclass Brier score.
+
+Model metrics are presented as historical evaluation results, not guarantees of future performance.
+
+## Running the Frontend in Development Mode
+
+The frontend and backend run as separate development servers.
+
+**Terminal 1 — Backend**
+
+From the project root:
+
+```powershell
+python run.py
+```
+
+**Terminal 2 — Frontend**
+
+Navigate to the frontend directory:
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Open:
+
+**http://127.0.0.1:5173**
+
+Vite proxies `/api` requests to the FastAPI backend at `http://127.0.0.1:8000`.
+
+## Building the Frontend for Production
+
+From the `frontend/` directory:
+
+```powershell
+npm run build
+```
+
+The production bundle is generated inside `app/static/`.
+
+FastAPI serves the built frontend at:
+
+**http://127.0.0.1:8000**
+
+## Photography and Asset Credits
+
+Football photographs are sourced from Franco Monsalvo's Pexels pages.
+
+Source links and licence information are documented in:
+- `ASSET_CREDITS.md`
+- `frontend/README.md`
+
+Pexels permits use of its images under its applicable licence. However, separate rights relating to identifiable people, trademarks and brands depicted in photographs may still apply.
+
+The photographs are served through the Pexels image CDN, so an internet connection is required to display them.
