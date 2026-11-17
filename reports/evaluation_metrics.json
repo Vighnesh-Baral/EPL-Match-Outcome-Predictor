@@ -1,0 +1,253 @@
+{
+  "test_seasons": [
+    "2024-25",
+    "2025-26"
+  ],
+  "test_samples": 760,
+  "standard_accuracy": 49.21,
+  "draw_tuned_accuracy": 47.24,
+  "log_loss": 1.0199,
+  "brier_score": 0.612,
+  "classification_report_standard": {
+    "A": {
+      "precision": 0.4653846153846154,
+      "recall": 0.491869918699187,
+      "f1-score": 0.4782608695652174,
+      "support": 246.0
+    },
+    "D": {
+      "precision": 0.5,
+      "recall": 0.005076142131979695,
+      "f1-score": 0.010050251256281407,
+      "support": 197.0
+    },
+    "H": {
+      "precision": 0.5060240963855421,
+      "recall": 0.7949526813880127,
+      "f1-score": 0.6184049079754601,
+      "support": 317.0
+    },
+    "accuracy": 0.4921052631578947,
+    "macro avg": {
+      "precision": 0.49046957059005253,
+      "recall": 0.4306329140730598,
+      "f1-score": 0.36890534293231964,
+      "support": 760.0
+    },
+    "weighted avg": {
+      "precision": 0.49130822886688447,
+      "recall": 0.4921052631578947,
+      "f1-score": 0.4153505647878313,
+      "support": 760.0
+    }
+  },
+  "classification_report_draw_tuned": {
+    "A": {
+      "precision": 0.5052083333333334,
+      "recall": 0.3943089430894309,
+      "f1-score": 0.4429223744292237,
+      "support": 246.0
+    },
+    "D": {
+      "precision": 0.2635135135135135,
+      "recall": 0.19796954314720813,
+      "f1-score": 0.22608695652173913,
+      "support": 197.0
+    },
+    "H": {
+      "precision": 0.530952380952381,
+      "recall": 0.7034700315457413,
+      "f1-score": 0.6051560379918589,
+      "support": 317.0
+    },
+    "accuracy": 0.4723684210526316,
+    "macro avg": {
+      "precision": 0.43322474259974264,
+      "recall": 0.43191617259412673,
+      "f1-score": 0.4247217896476072,
+      "support": 760.0
+    },
+    "weighted avg": {
+      "precision": 0.4532964696369302,
+      "recall": 0.4723684210526316,
+      "f1-score": 0.45438486656288285,
+      "support": 760.0
+    }
+  },
+  "confusion_matrix_standard": {
+    "Pred_A": {
+      "Actual_A": 121,
+      "Actual_D": 74,
+      "Actual_H": 65
+    },
+    "Pred_D": {
+      "Actual_A": 1,
+      "Actual_D": 1,
+      "Actual_H": 0
+    },
+    "Pred_H": {
+      "Actual_A": 124,
+      "Actual_D": 122,
+      "Actual_H": 252
+    }
+  },
+  "confusion_matrix_draw_tuned": {
+    "Pred_A": {
+      "Actual_A": 97,
+      "Actual_D": 55,
+      "Actual_H": 40
+    },
+    "Pred_D": {
+      "Actual_A": 55,
+      "Actual_D": 39,
+      "Actual_H": 54
+    },
+    "Pred_H": {
+      "Actual_A": 94,
+      "Actual_D": 103,
+      "Actual_H": 223
+    }
+  },
+  "draw_analysis": {
+    "actual_draw_count": 197,
+    "predicted_draws_standard": 2,
+    "predicted_draws_tuned": 148,
+    "correctly_predicted_draws_tuned": 39,
+    "draw_recall_tuned": 0.198,
+    "draw_precision_tuned": 0.2635,
+    "draw_f1_tuned": 0.2261,
+    "mean_draw_prob_when_draw": 0.2217,
+    "mean_draw_prob_when_not_draw": 0.2191,
+    "max_draw_prob_observed": 0.3613,
+    "min_draw_prob_observed": 0.158
+  },
+  "calibration": {
+    "A": {
+      "mean_predicted": 0.3107,
+      "actual_frequency": 0.3237,
+      "binned_preds": [
+        0.1373,
+        0.2988,
+        0.4925,
+        0.6477,
+        0.9
+      ],
+      "binned_actuals": [
+        0.1617,
+        0.3521,
+        0.4343,
+        0.6346,
+        0.0
+      ],
+      "binned_counts": [
+        266,
+        267,
+        175,
+        52,
+        0
+      ]
+    },
+    "D": {
+      "mean_predicted": 0.2198,
+      "actual_frequency": 0.2592,
+      "binned_preds": [
+        0.1833,
+        0.2305,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "binned_actuals": [
+        0.2139,
+        0.2726,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "binned_counts": [
+        173,
+        587,
+        0,
+        0,
+        0
+      ]
+    },
+    "H": {
+      "mean_predicted": 0.4695,
+      "actual_frequency": 0.4171,
+      "binned_preds": [
+        0.1597,
+        0.3104,
+        0.506,
+        0.6758,
+        0.9
+      ],
+      "binned_actuals": [
+        0.1475,
+        0.2739,
+        0.4486,
+        0.6018,
+        0.0
+      ],
+      "binned_counts": [
+        61,
+        230,
+        243,
+        226,
+        0
+      ]
+    }
+  },
+  "top_10_features": [
+    {
+      "Feature": "Elo_Diff",
+      "Importance_Mean": 0.02999999999999997,
+      "Importance_Std": 0.00931891116296094
+    },
+    {
+      "Feature": "Home_Elo",
+      "Importance_Mean": 0.02236842105263156,
+      "Importance_Std": 0.004633372858331313
+    },
+    {
+      "Feature": "Home_Attacking_Strength",
+      "Importance_Mean": 0.006315789473684175,
+      "Importance_Std": 0.0019338076916709359
+    },
+    {
+      "Feature": "Away_Rest_Days",
+      "Importance_Mean": 0.006052631578947332,
+      "Importance_Std": 0.0013418472404191583
+    },
+    {
+      "Feature": "Home_SoT_Last5",
+      "Importance_Mean": 0.004210526315789431,
+      "Importance_Std": 0.002263769807116488
+    },
+    {
+      "Feature": "Home_SoTA_Last5",
+      "Importance_Mean": 0.0036842105263157456,
+      "Importance_Std": 0.0017455919949239
+    },
+    {
+      "Feature": "SoTA_Last5_Diff",
+      "Importance_Mean": 0.0034210526315789245,
+      "Importance_Std": 0.004042708288351886
+    },
+    {
+      "Feature": "Net_Strength_Diff",
+      "Importance_Mean": 0.0034210526315789137,
+      "Importance_Std": 0.0031797489404196176
+    },
+    {
+      "Feature": "League_Home_Win_Pct_Prior",
+      "Importance_Mean": 0.0018421052631578672,
+      "Importance_Std": 0.00178482367976979
+    },
+    {
+      "Feature": "Defensive_Strength_Diff",
+      "Importance_Mean": 0.001842105263157856,
+      "Importance_Std": 0.0031797489404196137
+    }
+  ]
+}

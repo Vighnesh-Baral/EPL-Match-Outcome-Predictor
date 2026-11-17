@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "version": "2.4",
+    "sklearn_version": "1.8.0",
+    "xgboost_version": "3.1.3",
+    "model_name": "Random Forest",
+    "ensemble_name": "Random Forest + Poisson",
+    "ml_probability_weight": 0.7000000000000001,
+    "poisson_probability_weight": 0.29999999999999993,
+    "home_advantage_factor": 1.06,
+    "home_advantage_search": [
+      1.0,
+      1.01,
+      1.02,
+      1.03,
+      1.04,
+      1.06
+    ],
+    "probability_selection_metric": "validation log loss",
+    "feature_columns": [
+      "home_form5_ppm",
+      "away_form5_ppm",
+      "home_season_ppm",
+      "away_season_ppm",
+      "home_season_gf_pm",
+      "away_season_gf_pm",
+      "home_season_ga_pm",
+      "away_season_ga_pm",
+      "home_season_win_rate",
+      "away_season_win_rate",
+      "home_matches_played",
+      "away_matches_played",
+      "h2h_home_ppm_10",
+      "h2h_home_goal_diff_10",
+      "h2h_matches_10",
+      "league_avg_team_goals"
+    ],
+    "training_matches": 4180,
+    "training_start": "2015-08-08",
+    "training_end": "2026-05-24",
+    "training_seasons": [
+      "2015-16",
+      "2016-17",
+      "2017-18",
+      "2018-19",
+      "2019-20",
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26"
+    ],
+    "season_sample_weights": {
+      "2015-16": 0.25,
+      "2016-17": 0.27,
+      "2017-18": 0.29,
+      "2018-19": 0.31,
+      "2019-20": 0.35,
+      "2020-21": 0.45,
+      "2021-22": 0.5,
+      "2022-23": 0.58,
+      "2023-24": 0.72,
+      "2024-25": 0.86,
+      "2025-26": 1.0,
+      "2026-27": 1.15
+    },
+    "validation_period": [
+      "2022-23",
+      "2023-24"
+    ],
+    "test_period": [
+      "2024-25",
+      "2025-26"
+    ],
+    "test_matches": 760,
+    "validation_best_blend_log_loss": 0.9713234308535651,
+    "test_metrics": [
+      {
+        "model": "Poisson baseline (1.06 reference)",
+        "accuracy": 0.4776315789473684,
+        "log_loss": 1.0803869849079584,
+        "brier_score": 0.639692401920689,
+        "macro_f1": 0.37742509867027224,
+        "home_recall": 0.6908517350157729,
+        "draw_recall": 0.025380710659898477,
+        "away_recall": 0.5650406504065041
+      },
+      {
+        "model": "Random Forest + Poisson",
+        "accuracy": 0.4855263157894737,
+        "log_loss": 1.0237301911998173,
+        "brier_score": 0.61498795116279,
+        "macro_f1": 0.3697639785895319,
+        "home_recall": 0.7413249211356467,
+        "draw_recall": 0.005076142131979695,
+        "away_recall": 0.540650406504065
+      },
+      {
+        "model": "Random Forest",
+        "accuracy": 0.4934210526315789,
+        "log_loss": 1.0275136818839876,
+        "brier_score": 0.6164657235415781,
+        "macro_f1": 0.3740113065699797,
+        "home_recall": 0.7665615141955836,
+        "draw_recall": 0.005076142131979695,
+        "away_recall": 0.532520325203252
+      }
+    ],
+    "historical_current_season_matches": 0,
+    "partial_current_season_results_excluded_from_training": true,
+    "disclaimer": "Historical backtest is not proof of 2026/27 performance. The current-season team/FPL adjustment is a new snapshot input and needs prospective validation as 2026/27 match results accrue."
+  },
+  "validation_comparison": [
+    {
+      "model": "Logistic Regression",
+      "validation_samples": 760,
+      "validation_ml_log_loss": 0.9769023727610293,
+      "validation_blend_log_loss": 0.9747645258911055,
+      "blend_ml_weight": 0.8,
+      "poisson_home_advantage_factor": 1.06,
+      "validation_accuracy": 0.5355263157894737,
+      "validation_log_loss": 0.9747645258911055,
+      "validation_brier_score": 0.5796373822330748,
+      "validation_macro_f1": 0.39397659608708646,
+      "validation_home_recall": 0.7409470752089137,
+      "validation_draw_recall": 0.0,
+      "validation_away_recall": 0.6077586206896551
+    },
+    {
+      "model": "Random Forest",
+      "validation_samples": 760,
+      "validation_ml_log_loss": 0.977382661352063,
+      "validation_blend_log_loss": 0.9713234308535651,
+      "blend_ml_weight": 0.7000000000000001,
+      "poisson_home_advantage_factor": 1.06,
+      "validation_accuracy": 0.5513157894736842,
+      "validation_log_loss": 0.9713234308535651,
+      "validation_brier_score": 0.5761275487455815,
+      "validation_macro_f1": 0.40740740740740744,
+      "validation_home_recall": 0.7493036211699164,
+      "validation_draw_recall": 0.0,
+      "validation_away_recall": 0.646551724137931
+    },
+    {
+      "model": "XGBoost",
+      "validation_samples": 760,
+      "validation_ml_log_loss": 1.0191530932567028,
+      "validation_blend_log_loss": 0.9900728313085653,
+      "blend_ml_weight": 0.45,
+      "poisson_home_advantage_factor": 1.06,
+      "validation_accuracy": 0.5197368421052632,
+      "validation_log_loss": 0.9900728313085653,
+      "validation_brier_score": 0.5877189042195321,
+      "validation_macro_f1": 0.3925581201352661,
+      "validation_home_recall": 0.6880222841225627,
+      "validation_draw_recall": 0.011834319526627219,
+      "validation_away_recall": 0.6293103448275862
+    },
+    {
+      "model": "Poisson baseline",
+      "validation_samples": 760,
+      "validation_ml_log_loss": null,
+      "validation_blend_log_loss": 1.0179336692859282,
+      "blend_ml_weight": 0.0,
+      "poisson_home_advantage_factor": 1.06,
+      "validation_accuracy": 0.5197368421052632,
+      "validation_log_loss": 1.0179336692859282,
+      "validation_brier_score": 0.6023186789904527,
+      "validation_macro_f1": 0.3967453306219008,
+      "validation_home_recall": 0.6740947075208914,
+      "validation_draw_recall": 0.01775147928994083,
+      "validation_away_recall": 0.646551724137931
+    }
+  ],
+  "test_comparison": [
+    {
+      "model": "Poisson baseline (1.06 reference)",
+      "accuracy": 0.4776315789473684,
+      "log_loss": 1.0803869849079584,
+      "brier_score": 0.639692401920689,
+      "macro_f1": 0.37742509867027224,
+      "home_recall": 0.6908517350157729,
+      "draw_recall": 0.025380710659898477,
+      "away_recall": 0.5650406504065041
+    },
+    {
+      "model": "Random Forest + Poisson",
+      "accuracy": 0.4855263157894737,
+      "log_loss": 1.0237301911998173,
+      "brier_score": 0.61498795116279,
+      "macro_f1": 0.3697639785895319,
+      "home_recall": 0.7413249211356467,
+      "draw_recall": 0.005076142131979695,
+      "away_recall": 0.540650406504065
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.4934210526315789,
+      "log_loss": 1.0275136818839876,
+      "brier_score": 0.6164657235415781,
+      "macro_f1": 0.3740113065699797,
+      "home_recall": 0.7665615141955836,
+      "draw_recall": 0.005076142131979695,
+      "away_recall": 0.532520325203252
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+Matchday,Fixture,HomeTeam,AwayTeam,Status
+11,1,Manchester City,Fulham,Scheduled
+11,2,Bournemouth,Nottingham Forest,Scheduled
+11,3,Aston Villa,Sunderland,Scheduled
+11,4,Chelsea,Leeds United,Scheduled
+11,5,Coventry City,Crystal Palace,Scheduled
+11,6,Tottenham Hotspur,Ipswich Town,Scheduled
+11,7,Newcastle United,Arsenal,Scheduled
+11,8,Hull City,Brighton,Scheduled
+11,9,Liverpool,Manchester United,Scheduled
+11,10,Brentford,Everton,Scheduled
+12,1,Nottingham Forest,Chelsea,Scheduled
+12,2,Leeds United,Coventry City,Scheduled
+12,3,Manchester United,Brentford,Scheduled
+12,4,Ipswich Town,Aston Villa,Scheduled
+12,5,Everton,Liverpool,Scheduled
+12,6,Brighton,Newcastle United,Scheduled
+12,7,Crystal Palace,Hull City,Scheduled
+12,8,Fulham,Bournemouth,Scheduled
+12,9,Sunderland,Tottenham Hotspur,Scheduled
+12,10,Arsenal,Manchester City,Scheduled
+13,1,Coventry City,Ipswich Town,Scheduled
+13,2,Chelsea,Crystal Palace,Scheduled
+13,3,Hull City,Nottingham Forest,Scheduled
+13,4,Liverpool,Sunderland,Scheduled
+13,5,Manchester City,Leeds United,Scheduled
+13,6,Bournemouth,Brighton,Scheduled
+13,7,Aston Villa,Everton,Scheduled
+13,8,Brentford,Arsenal,Scheduled
+13,9,Newcastle United,Manchester United,Scheduled
+13,10,Tottenham Hotspur,Fulham,Scheduled
+14,1,Chelsea,Liverpool,Scheduled
+14,2,Aston Villa,Crystal Palace,Scheduled
+14,3,Bournemouth,Hull City,Scheduled
+14,4,Leeds United,Ipswich Town,Scheduled
+14,5,Manchester United,Coventry City,Scheduled
+14,6,Nottingham Forest,Brighton,Scheduled
+14,7,Brentford,Manchester City,Scheduled
+14,8,Everton,Fulham,Scheduled
+14,9,Newcastle United,Sunderland,Scheduled
+14,10,Tottenham Hotspur,Arsenal,Scheduled
+15,1,Fulham,Brentford,Scheduled
+15,2,Ipswich Town,Newcastle United,Scheduled
+15,3,Liverpool,Leeds United,Scheduled
+15,4,Manchester City,Chelsea,Scheduled
+15,5,Arsenal,Bournemouth,Scheduled
+15,6,Brighton,Everton,Scheduled
+15,7,Sunderland,Nottingham Forest,Scheduled
+15,8,Coventry City,Aston Villa,Scheduled
+15,9,Crystal Palace,Manchester United,Scheduled
+15,10,Hull City,Tottenham Hotspur,Scheduled
+16,1,Brentford,Newcastle United,Scheduled
+16,2,Bournemouth,Coventry City,Scheduled
+16,3,Leeds United,Fulham,Scheduled
+16,4,Manchester City,Hull City,Scheduled
+16,5,Nottingham Forest,Everton,Scheduled
+16,6,Liverpool,Tottenham Hotspur,Scheduled
+16,7,Brighton,Ipswich Town,Scheduled
+16,8,Sunderland,Crystal Palace,Scheduled
+16,9,Arsenal,Manchester United,Scheduled
+16,10,Chelsea,Aston Villa,Scheduled
+17,1,Aston Villa,Leeds United,Scheduled
+17,2,Everton,Sunderland,Scheduled
+17,3,Fulham,Brighton,Scheduled
+17,4,Ipswich Town,Brentford,Scheduled
+17,5,Tottenham Hotspur,Bournemouth,Scheduled
+17,6,Hull City,Liverpool,Scheduled
+17,7,Newcastle United,Manchester City,Scheduled
+17,8,Coventry City,Chelsea,Scheduled
+17,9,Manchester United,Nottingham Forest,Scheduled
+17,10,Crystal Palace,Arsenal,Scheduled
+18,1,Hull City,Leeds United,Scheduled
+18,2,Tottenham Hotspur,Brighton,Scheduled
+18,3,Everton,Manchester City,Scheduled
+18,4,Coventry City,Brentford,Scheduled
+18,5,Crystal Palace,Bournemouth,Scheduled
+18,6,Fulham,Arsenal,Scheduled
+18,7,Manchester United,Sunderland,Scheduled
+18,8,Newcastle United,Nottingham Forest,Scheduled
+18,9,Aston Villa,Liverpool,Scheduled
+18,10,Ipswich Town,Chelsea,Scheduled
+19,1,Leeds United,Everton,Scheduled
+19,2,Brighton,Manchester United,Scheduled
+19,3,Arsenal,Ipswich Town,Scheduled
+19,4,Brentford,Crystal Palace,Scheduled
+19,5,Liverpool,Coventry City,Scheduled
+19,6,Nottingham Forest,Fulham,Scheduled
+19,7,Sunderland,Hull City,Scheduled
+19,8,Bournemouth,Aston Villa,Scheduled
+19,9,Chelsea,Newcastle United,Scheduled
+19,10,Manchester City,Tottenham Hotspur,Scheduled
+20,1,Arsenal,Brentford,Scheduled
+20,2,Brighton,Bournemouth,Scheduled
+20,3,Everton,Aston Villa,Scheduled
+20,4,Nottingham Forest,Hull City,Scheduled
+20,5,Sunderland,Liverpool,Scheduled
+20,6,Crystal Palace,Chelsea,Scheduled
+20,7,Fulham,Tottenham Hotspur,Scheduled
+20,8,Ipswich Town,Coventry City,Scheduled
+20,9,Leeds United,Manchester City,Scheduled
+20,10,Manchester United,Newcastle United,Scheduled
+21,1,Bournemouth,Ipswich Town,Scheduled
+21,2,Aston Villa,Manchester United,Scheduled
+21,3,Brentford,Brighton,Scheduled
+21,4,Chelsea,Sunderland,Scheduled
+21,5,Coventry City,Everton,Scheduled
+21,6,Hull City,Arsenal,Scheduled
+21,7,Liverpool,Crystal Palace,Scheduled
+21,8,Manchester City,Nottingham Forest,Scheduled
+21,9,Newcastle United,Fulham,Scheduled
+21,10,Tottenham Hotspur,Leeds United,Scheduled
+22,1,Arsenal,Newcastle United,Scheduled
+22,2,Brighton,Manchester City,Scheduled
+22,3,Crystal Palace,Tottenham Hotspur,Scheduled
+22,4,Everton,Brentford,Scheduled
+22,5,Fulham,Aston Villa,Scheduled
+22,6,Ipswich Town,Hull City,Scheduled
+22,7,Leeds United,Chelsea,Scheduled
+22,8,Manchester United,Liverpool,Scheduled
+22,9,Nottingham Forest,Bournemouth,Scheduled
+22,10,Sunderland,Coventry City,Scheduled
+23,1,Bournemouth,Fulham,Scheduled
+23,2,Aston Villa,Ipswich Town,Scheduled
+23,3,Brentford,Manchester United,Scheduled
+23,4,Chelsea,Nottingham Forest,Scheduled
+23,5,Coventry City,Leeds United,Scheduled
+23,6,Hull City,Crystal Palace,Scheduled
+23,7,Liverpool,Everton,Scheduled
+23,8,Manchester City,Arsenal,Scheduled
+23,9,Newcastle United,Brighton,Scheduled
+23,10,Tottenham Hotspur,Sunderland,Scheduled
+24,1,Arsenal,Liverpool,Scheduled
+24,2,Brighton,Hull City,Scheduled
+24,3,Crystal Palace,Coventry City,Scheduled
+24,4,Everton,Newcastle United,Scheduled
+24,5,Fulham,Manchester City,Scheduled
+24,6,Ipswich Town,Tottenham Hotspur,Scheduled
+24,7,Leeds United,Bournemouth,Scheduled
+24,8,Manchester United,Chelsea,Scheduled
+24,9,Nottingham Forest,Brentford,Scheduled
+24,10,Sunderland,Aston Villa,Scheduled
+25,1,Aston Villa,Bournemouth,Scheduled
+25,2,Coventry City,Liverpool,Scheduled
+25,3,Crystal Palace,Brentford,Scheduled
+25,4,Everton,Leeds United,Scheduled
+25,5,Fulham,Nottingham Forest,Scheduled
+25,6,Hull City,Sunderland,Scheduled
+25,7,Ipswich Town,Arsenal,Scheduled
+25,8,Manchester United,Brighton,Scheduled
+25,9,Newcastle United,Chelsea,Scheduled
+25,10,Tottenham Hotspur,Manchester City,Scheduled
+26,1,Bournemouth,Crystal Palace,Scheduled
+26,2,Arsenal,Fulham,Scheduled
+26,3,Brentford,Coventry City,Scheduled
+26,4,Brighton,Tottenham Hotspur,Scheduled
+26,5,Chelsea,Ipswich Town,Scheduled
+26,6,Leeds United,Aston Villa,Scheduled
+26,7,Liverpool,Hull City,Scheduled
+26,8,Manchester City,Newcastle United,Scheduled
+26,9,Nottingham Forest,Manchester United,Scheduled
+26,10,Sunderland,Everton,Scheduled
+27,1,Aston Villa,Chelsea,Scheduled
+27,2,Coventry City,Bournemouth,Scheduled
+27,3,Crystal Palace,Sunderland,Scheduled
+27,4,Everton,Nottingham Forest,Scheduled
+27,5,Fulham,Leeds United,Scheduled
+27,6,Hull City,Manchester City,Scheduled
+27,7,Ipswich Town,Brighton,Scheduled
+27,8,Manchester United,Arsenal,Scheduled
+27,9,Newcastle United,Brentford,Scheduled
+27,10,Tottenham Hotspur,Liverpool,Scheduled
+28,1,Bournemouth,Tottenham Hotspur,Scheduled
+28,2,Arsenal,Crystal Palace,Scheduled
+28,3,Brentford,Ipswich Town,Scheduled
+28,4,Brighton,Fulham,Scheduled
+28,5,Chelsea,Coventry City,Scheduled
+28,6,Leeds United,Hull City,Scheduled
+28,7,Liverpool,Aston Villa,Scheduled
+28,8,Manchester City,Everton,Scheduled
+28,9,Nottingham Forest,Newcastle United,Scheduled
+28,10,Sunderland,Manchester United,Scheduled
+29,1,Bournemouth,Newcastle United,Scheduled
+29,2,Aston Villa,Hull City,Scheduled
+29,3,Chelsea,Arsenal,Scheduled
+29,4,Coventry City,Manchester City,Scheduled
+29,5,Crystal Palace,Fulham,Scheduled
+29,6,Leeds United,Brighton,Scheduled
+29,7,Liverpool,Ipswich Town,Scheduled
+29,8,Manchester United,Everton,Scheduled
+29,9,Sunderland,Brentford,Scheduled
+29,10,Tottenham Hotspur,Nottingham Forest,Scheduled
+30,1,Arsenal,Sunderland,Scheduled
+30,2,Brentford,Bournemouth,Scheduled
+30,3,Brighton,Coventry City,Scheduled
+30,4,Everton,Tottenham Hotspur,Scheduled
+30,5,Fulham,Liverpool,Scheduled
+30,6,Hull City,Chelsea,Scheduled
+30,7,Ipswich Town,Crystal Palace,Scheduled
+30,8,Manchester City,Manchester United,Scheduled
+30,9,Newcastle United,Leeds United,Scheduled
+30,10,Nottingham Forest,Aston Villa,Scheduled
+31,1,Bournemouth,Manchester City,Scheduled
+31,2,Aston Villa,Brighton,Scheduled
+31,3,Chelsea,Fulham,Scheduled
+31,4,Coventry City,Arsenal,Scheduled
+31,5,Crystal Palace,Everton,Scheduled
+31,6,Leeds United,Nottingham Forest,Scheduled
+31,7,Liverpool,Newcastle United,Scheduled
+31,8,Manchester United,Hull City,Scheduled
+31,9,Sunderland,Ipswich Town,Scheduled
+31,10,Tottenham Hotspur,Brentford,Scheduled
+32,1,Arsenal,Aston Villa,Scheduled
+32,2,Brentford,Leeds United,Scheduled
+32,3,Brighton,Chelsea,Scheduled
+32,4,Everton,Bournemouth,Scheduled
+32,5,Fulham,Sunderland,Scheduled
+32,6,Hull City,Coventry City,Scheduled
+32,7,Ipswich Town,Manchester United,Scheduled
+32,8,Manchester City,Crystal Palace,Scheduled
+32,9,Newcastle United,Tottenham Hotspur,Scheduled
+32,10,Nottingham Forest,Liverpool,Scheduled
+33,1,Bournemouth,Arsenal,Scheduled
+33,2,Aston Villa,Coventry City,Scheduled
+33,3,Brentford,Fulham,Scheduled
+33,4,Chelsea,Manchester City,Scheduled
+33,5,Everton,Brighton,Scheduled
+33,6,Leeds United,Liverpool,Scheduled
+33,7,Manchester United,Crystal Palace,Scheduled
+33,8,Newcastle United,Ipswich Town,Scheduled
+33,9,Nottingham Forest,Sunderland,Scheduled
+33,10,Tottenham Hotspur,Hull City,Scheduled
+34,1,Arsenal,Tottenham Hotspur,Scheduled
+34,2,Brighton,Nottingham Forest,Scheduled
+34,3,Coventry City,Manchester United,Scheduled
+34,4,Crystal Palace,Aston Villa,Scheduled
+34,5,Fulham,Everton,Scheduled
+34,6,Hull City,Bournemouth,Scheduled
+34,7,Ipswich Town,Leeds United,Scheduled
+34,8,Liverpool,Chelsea,Scheduled
+34,9,Manchester City,Brentford,Scheduled
+34,10,Sunderland,Newcastle United,Scheduled
+35,1,Bournemouth,Manchester United,Scheduled
+35,2,Brentford,Aston Villa,Scheduled
+35,3,Brighton,Sunderland,Scheduled
+35,4,Everton,Hull City,Scheduled
+35,5,Fulham,Ipswich Town,Scheduled
+35,6,Leeds United,Arsenal,Scheduled
+35,7,Manchester City,Liverpool,Scheduled
+35,8,Newcastle United,Coventry City,Scheduled
+35,9,Nottingham Forest,Crystal Palace,Scheduled
+35,10,Tottenham Hotspur,Chelsea,Scheduled
+36,1,Arsenal,Nottingham Forest,Scheduled
+36,2,Aston Villa,Newcastle United,Scheduled
+36,3,Chelsea,Everton,Scheduled
+36,4,Coventry City,Tottenham Hotspur,Scheduled
+36,5,Crystal Palace,Brighton,Scheduled
+36,6,Hull City,Fulham,Scheduled
+36,7,Ipswich Town,Manchester City,Scheduled
+36,8,Liverpool,Brentford,Scheduled
+36,9,Manchester United,Leeds United,Scheduled
+36,10,Sunderland,Bournemouth,Scheduled
+37,1,Bournemouth,Chelsea,Scheduled
+37,2,Brentford,Hull City,Scheduled
+37,3,Brighton,Liverpool,Scheduled
+37,4,Everton,Arsenal,Scheduled
+37,5,Fulham,Coventry City,Scheduled
+37,6,Leeds United,Sunderland,Scheduled
+37,7,Manchester City,Aston Villa,Scheduled
+37,8,Newcastle United,Crystal Palace,Scheduled
+37,9,Nottingham Forest,Ipswich Town,Scheduled
+37,10,Tottenham Hotspur,Manchester United,Scheduled
+38,1,Arsenal,Brighton,Scheduled
+38,2,Aston Villa,Tottenham Hotspur,Scheduled
+38,3,Chelsea,Brentford,Scheduled
+38,4,Coventry City,Nottingham Forest,Scheduled
+38,5,Crystal Palace,Leeds United,Scheduled
+38,6,Hull City,Newcastle United,Scheduled
+38,7,Ipswich Town,Everton,Scheduled
+38,8,Liverpool,Bournemouth,Scheduled
+38,9,Manchester United,Fulham,Scheduled
+38,10,Sunderland,Manchester City,Scheduled

@@ -1,0 +1,38 @@
+{
+  "model_type": "CalibratedClassifierCV (VotingClassifier: LR + RF + HistGB)",
+  "calibration_method": "sigmoid",
+  "training_seasons": [
+    "2015-16",
+    "2016-17",
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+  ],
+  "validation_seasons": [
+    "2023-24"
+  ],
+  "test_seasons": [
+    "2024-25",
+    "2025-26"
+  ],
+  "selection_criterion": "Validation Log Loss and Brier Score on Season 2023-24",
+  "val_accuracy": 60.26,
+  "val_brier_score": 0.5464,
+  "val_log_loss": 0.9291,
+  "test_accuracy": 49.21,
+  "test_brier_score": 0.612,
+  "test_log_loss": 1.0199,
+  "test_macro_f1": 36.89,
+  "optimal_draw_threshold": 0.23,
+  "draw_tuned_test_accuracy": 47.24,
+  "draw_tuned_test_draw_f1": 22.61,
+  "draw_tuned_test_draw_recall": 19.8,
+  "classes": [
+    "A",
+    "D",
+    "H"
+  ]
+}

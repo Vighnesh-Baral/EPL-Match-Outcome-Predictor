@@ -1,0 +1,1 @@
+(function(){const dock=document.createElement('nav');dock.className='v24-dock';dock.setAttribute('aria-label','PitchIQ 2.4 predictors');dock.innerHTML='<span>PITCHIQ 2.4</span><a href="/matchday">MATCHDAY</a><a href="/table">TABLE FORECAST</a>';document.addEventListener('DOMContentLoaded',()=>document.body.appendChild(dock));})();
