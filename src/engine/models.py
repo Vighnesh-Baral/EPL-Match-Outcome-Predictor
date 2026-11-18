@@ -42,6 +42,11 @@ class ClassifierModel:
         self.model = None
         self.used_columns: list[str] = []
 
+    def __getstate__(self):
+        state = self.__dict__.copy()
+        state["factory"] = None        # lambdas are not picklable; the fitted model is all inference needs
+        return state
+
     def _x(self, frame: pd.DataFrame) -> np.ndarray:
         data = derive_columns(frame) if self.derive else frame
         extras = []

@@ -1,0 +1,21 @@
+{
+  "matched_matches": 380,
+  "of": 380,
+  "score_mismatches": 0,
+  "date_mismatches": 0,
+  "corr_match_xg_vs_goals": 0.5518691673234399,
+  "corr_match_sot_vs_xg": 0.6397996437846126,
+  "corr_match_shots_vs_xg": 0.6702257609068079,
+  "xg_from_shots_regression": {
+    "intercept": 0.04222148471077856,
+    "per_shot_on_target": 0.16702533965357147,
+    "per_other_shot": 0.061076207765686084,
+    "r2": 0.52038817124443
+  },
+  "predictiveness_of_rolling5_for_next_match_goals": {
+    "corr_rolling5_xg_vs_next_goals": 0.19387722833407803,
+    "n_team_matches": 660,
+    "corr_rolling5_sot_vs_next_goals": 0.2064026692900703,
+    "corr_rolling5_gf_vs_next_goals": 0.11731663523402353
+  }
+}

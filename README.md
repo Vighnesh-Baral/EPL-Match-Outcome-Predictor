@@ -1,72 +1,95 @@
-# PitchIQ — Premier League Match Predictor (Version 2.4)
+# PitchIQ — Premier League Match Predictor (Version 2.5)
 
-PitchIQ is an independent 2026/27 Premier League forecasting workspace. Version 2.4 combines a chronologically evaluated historical classifier with a current-season Poisson goal model, and adds full-round matchday predictions plus Monte Carlo end-of-season table forecasting.
+PitchIQ estimates Home / Draw / Away probabilities for Premier League fixtures and powers a Match Predictor,
+Matchday Predictor, season Table Predictor, Team and Player Intelligence, Head-to-Head and Model Performance views.
+It is an independent project, not betting advice.
 
-> **Important:** A backtest is not a guarantee of future performance. The Version 2.4 historical holdout accuracy is approximately 48.6% for the selected probability blend, and draw classification remains a material weakness. The project reports these limitations rather than presenting predictions as certainties.
+## Version 2.5 in one paragraph
 
-## Version 2.4 highlights
+v2.5 replaces the v2.4 prediction engine with a leakage-safe rating/feature pipeline and a seven-model equal-weight ensemble,
+and measures it with rolling chronological backtesting against v2.4 and naive baselines. On the same 760 untouched test matches
+the log loss improves from **1.0233 to 1.0091** (Brier 0.6151 -> 0.6046, accuracy 48.7% -> 50.0%). That gap is **not statistically
+conclusive** (paired-bootstrap 95% interval [-0.030, +0.002]; accuracy's own 95% interval is about +/-3.5 pp), and draws are still not
+predictable. Full tables: `reports/v25/EVALUATION_REPORT.md`. The v2.4 audit is in `reports/v25/AUDIT_V2_4.md`.
 
-- Rebuilt and versioned the active historical model using complete 2015/16–2025/26 match archives.
-- Selected the classifier/Poisson probability blend and explicit Poisson home-goal factor using a chronological validation set and log loss.
-- Excluded the incomplete 2026/27 match-results file from supervised model fitting; it remains available for head-to-head context.
-- Refreshed the current standings input through Matchday 10 while disclosing that advanced FBref/FPL inputs remain at the 4 November 2026 snapshot.
-- Added **Matchday Predictor** for every scheduled round from Matchday 11 to Matchday 38.
-- Added **Table Predictor**, a 10,000-run default Monte Carlo simulation of the remaining 280 fixtures, with projected standings, title/top-four/top-six/relegation probabilities and finishing-position ranges.
-- Exposed model metadata, probability components and the data limitations in the API and interface.
+## What changed from v2.4
 
-## Model architecture
+| Area | v2.4 | v2.5 |
+|---|---|---|
+| Serving vs backtest | Served a hand-weighted, never-backtested Poisson branch; evaluated a different one | One feature engine and one ensemble for both; test report reproducible by a unit test |
+| Features | Season-to-date form, H2H, a cumulative league goal rate | Dynamic Elo, online attack/defence ratings, 5/10-match raw and opponent-adjusted form, venue form, shots on target, rest and fixture load, H2H (54 features, 9 groups) |
+| Models | Random Forest + Poisson blend | Elo logistic, core logistic, full logistic, Random Forest, XGBoost, home/away Poisson goal models, Dixon-Coles (all compared) |
+| Home advantage | Manual factor 1.06 (grid edge) | Learned from results; no manual factor anywhere |
+| Draws | Never predicted | Never forced; reported honestly (see below) |
+| Tuning / selection | One validation window | Tuning window, separate selection window with nested season-swap, frozen before a single final test |
+| Data | 11 match-level 2026/27 rows, no fixture dates | + OpenFootball (cross-validated 4,180/4,180), 2026/27 fixture dates and kick-offs, 60 known 2026/27 results, StatsBomb 2015/16 xG for validation |
+| Missing statistics | n/a | Never imputed: NaN is skipped, then padded with a documented league prior |
 
-### Historical classifier
+## Model architecture (`src/engine/`)
 
-The active production classifier is a recency-weighted Random Forest trained on 4,180 complete historical matches from 2015/16 through 2025/26. Match-level features are reconstructed chronologically using only information available before each fixture. All fixtures on the same date are featurised before any results from that date are added to team or head-to-head history.
+- `features.py` — `FeatureEngine`: one stateful, strictly pre-match engine used for training rows *and* live fixtures.
+  Fixtures on a date are featurised before that date's results are applied.
+- `dixon_coles.py` — time-decayed Dixon-Coles (analytic-gradient MLE, ridge shrinkage, profile-estimated low-score correlation); the
+  rolling harness refits at most every 14 days using only earlier matches.
+- `models.py` — classifier wrappers, home/away Poisson goal models with a Dixon-Coles score grid.
+- `protocol.py`, `backtest.py`, `tune.py`, `select.py`, `final_eval.py`, `report.py` — chronological protocol and its reproducible stages.
+- `production.py` — trains the frozen recipe and serves predictions. `v24_reference.py` rebuilds the v2.4 model for comparison.
 
-Features include:
+### Evaluation protocol
+| Window | Seasons | Purpose |
+|---|---|---|
+| Warm-up | 2015-16 | initialise ratings only |
+| Tuning | 2018-19 to 2021-22 | hyper-parameters, feature-group selection (rolling-origin) |
+| Selection | 2022-23, 2023-24 | ensemble recipe and calibration decision, nested season swap |
+| Final test | 2024-25, 2025-26 | scored once, after everything was frozen |
 
-- Last-five form points per match.
-- Season-to-date points, goals for, goals against and win rate.
-- Matches played before the fixture.
-- The previous ten head-to-head meetings, where available.
-- A league goal-rate reference.
+### Headline test results (760 matches; lower is better except accuracy and macro-F1)
+| Model | Accuracy | Log loss | Brier | RPS | Draw recall |
+|---|---|---|---|---|---|
+| Climatology baseline | 41.7% | 1.0834 | 0.6564 | 0.2317 | 0.0% |
+| v2.4 RF + Poisson (as shipped) | 48.7% | 1.0233 | 0.6151 | 0.2112 | 1.0% |
+| **v2.5 equal-weight ensemble (production)** | **50.0%** | **1.0091** | **0.6046** | **0.2060** | 0.0% |
+| v2.5 Dixon-Coles | 49.5% | 1.0148 | 0.6085 | 0.2086 | 0.0% |
+| v2.5 home/away Poisson goals | 50.3% | 1.0029 | 0.6005 | 0.2045 | 0.0% |
 
-### Probability blend and home advantage
+Single-model results are not significantly different from each other. The goal-Poisson model scored best on the test window, but the ensemble recipe had
+been frozen on the selection window and was kept: changing it now would be tuning on the test set.
 
-The selected production blend is **Random Forest + Poisson**, with the current saved version selecting a 70% historical-classifier / 30% Poisson blend. The explicit Poisson home-goal multiplier selected by the validation search is 1.06. Candidate values tested were 1.00, 1.01, 1.02, 1.03, 1.04 and 1.06.
-
-This factor is a multiplier on expected goals in the Poisson branch; it is not a 6-percentage-point addition to home-win probability. The historical classifier also learns home/away differences from its training data, so the validation search evaluates the combined effect rather than assuming that a lower multiplier is automatically better.
-
-### Chronological evaluation
-
-- Training window for model selection: 2015/16–2021/22.
-- Validation/model selection: 2022/23–2023/24.
-- Untouched historical test: 2024/25–2025/26 (760 fixtures).
-- Final production classifier is refitted on the complete 2015/16–2025/26 archive after the validation and test protocol.
-
-The selected blend minimises validation log loss. On the held-out test period it recorded:
-
-| Metric | Random Forest + Poisson |
-|---|---:|
-| Accuracy | 48.55% |
-| Log loss | 1.0237 |
-| Multiclass Brier score | 0.6150 |
-| Macro F1 | 0.3698 |
-| Home recall | 74.13% |
-| Draw recall | 0.51% |
-| Away recall | 54.07% |
-
-The standalone Random Forest recorded 49.34% accuracy, 1.0275 log loss and 0.6165 Brier score on the same test. The blend was retained because its probability scores (log loss and Brier) were better, even though its top-class accuracy was slightly lower. This is a deliberate probability-quality trade-off, not a claim that the blend maximises accuracy.
-
-**Draw limitation:** the model very rarely selects Draw as the single most likely class. A draw-class weighting / probability boost was tested on validation data; it increased draw recall but reduced accuracy and worsened log loss. It was therefore not applied to the production probabilities. Draw calibration needs more research and prospective results.
-
-Evaluation files are saved in `reports/model_evaluation_v2.json`, `reports/model_comparison_v2.csv` and `reports/model_test_results_v2.csv`.
+### What the experiments found
+- **Team-strength ratings carry almost all the signal.** Adding rolling form, shots, schedule and H2H groups did not improve out-of-sample log loss;
+  heavy regularisation or ensembling was needed so they did not hurt (`reports/v25/tuning_results.json`).
+- **Draws are not separable from this data.** Mean P(draw) is 0.235 on draws vs 0.231 on non-draws. Argmax draw recall is therefore ~0% for v2.5 and ~1% for v2.4.
+  Probabilities were not inflated to hide this; doing so would worsen log loss and calibration without new information.
+- **Calibration.** Temperature scaling was tested on the selection window and not applied (it hurt out of sample).
+- **Shots on target are a defensible xG stand-in:** they explain ~52% of real xG variance (StatsBomb 2015/16) and predict next-match goals as well as rolling xG.
 
 ## Current-season data and limitations
 
-- `Data/Raw/2026_27/current_standings_2026_27.csv` contains the current standings through Matchday 10 and is used as the current league-table baseline.
-- Advanced FBref team metrics and FPL player inputs remain at the **4 November 2026** snapshot. They predate the Matchday 10 results and are not retroactively refreshed.
-- `Data/Raw/2026_27/match_results_2026_27.csv` is only a partial results log (11 verified rows in this delivery). It is used for H2H context, not supervised model training.
-- The current FPL snapshot does not provide complete player minutes, starts, xG, assists, defensive actions, injuries or suspensions. FPL-based values are contribution/depth proxies, not complete player ability estimates or confirmed line-ups.
-- Team-rating component weights and the translations from current ratings to expected goals remain transparent heuristics. The historical backtest does not validate every current-season rating adjustment.
-- The fixture schedule contains Matchday and home/away assignments but not confirmed dates or kick-off times. It must be refreshed when fixtures are rescheduled.
+- 2026/27: 60 of the 100 played matches are known at match level (OpenFootball Matchdays 1-5 + the repository log). The other 40 are **not imputed**; the
+  Matchday-10 standings remain the table baseline. Rolling-form features for current-season matches can therefore be a few matches stale.
+- **Player-strength features are not part of v2.5 predictions.** Historical per-player data (the MIT-licensed FPL archive) was not integrated, so such features
+  could not be validated on past matches. FPL/FBref squad ratings are still displayed in Team and Player Intelligence, but they no longer influence probabilities.
+  This is the main unfinished item; the ablation harness in `tune.py` is ready to evaluate it.
+- Football-Data.co.uk and FPL live downloads are implemented and tested with mocked responses, but **could not be run live** from the build environment. No bookmaker-odds
+  benchmark is reported because the shipped CSVs contain no odds.
+- Fixture congestion counts league matches only. No lineup, injury or suspension data is available from the free sources.
+- The test window was also used to report v2.4, so it is not pristine with respect to v2.4 development; v2.5 did not use it for any decision.
+- With ~760 test matches, differences below roughly 3 pp accuracy or 0.02 log loss should not be over-interpreted.
+- `Data/Raw/2026_27/` FBref/FPL snapshots remain at 4 November 2026. Fixture dates come from the cached OpenFootball schedule and must be refreshed on reschedules.
+
+## Reproduce the pipeline
+
+```powershell
+python -m src.ingest openfootball --seasons 2026-27     # refresh schedule/results
+python -m src.engine.tune                                # tuning window  -> reports/v25/tuning_results.json
+python -m src.engine.select                              # selection window -> reports/v25/selection.json
+python -m src.engine.final_eval                          # one-shot final test -> reports/v25/test_results.json
+python -m src.engine.report                              # renders reports/v25/EVALUATION_REPORT.md
+python -m src.engine.xg_validation                       # shots vs real xG (needs Data/Processed/statsbomb_pl_2015_16_xg.csv)
+python -m src.train                                      # refit production model -> Models/pitchiq_v25.joblib
+```
+
+Datasets, licences and coverage: `DATA_SOURCES.md`. StatsBomb Open Data requires attribution: *Data provided by StatsBomb.*
 
 ## New prediction modules
 
@@ -95,7 +118,7 @@ python run.py
 
 Open `http://127.0.0.1:8000`. Stop the server with `Ctrl+C`.
 
-The application loads `Models/historical_predictor_v2.joblib`; if it is missing or its data/library metadata is stale, the API retrains it from the historical archive. To explicitly rebuild the model and evaluation reports, run `python -m src.train`.
+The application loads `Models/pitchiq_v25.joblib`; if it is missing, corrupt, or its data/library metadata is stale, the API retrains it (about 7 seconds) from the historical archive. To rebuild it explicitly, run `python -m src.train`.
 
 ## Frontend
 
@@ -115,7 +138,7 @@ To rebuild the integrated React workspace for FastAPI:
 npm run build
 ```
 
-The production bundle is written to `app/static/`. The two Version 2.4 prediction modules are also served directly by FastAPI at `/matchday` and `/table`, and the existing root page has shortcuts to them. These static module pages use the same API endpoints as the React workspace.
+The production bundle is written to `app/static/`. The Matchday and Table prediction modules are also served directly by FastAPI at `/matchday` and `/table`, and the existing root page has shortcuts to them. These static module pages use the same API endpoints as the React workspace.
 
 ## API endpoints
 
@@ -146,7 +169,7 @@ pytest -q
 python -m compileall -q app src tests
 ```
 
-Tests cover input integrity, same-date leakage prevention, historical training boundaries, probability sums, matchday fixture counts and the 20-team/38-match season simulation.
+Tests cover input integrity, leakage safety of the feature engine (a result never changes its own or earlier features; same-day fixtures never inform each other), chronological protocol boundaries, metric correctness, Dixon-Coles fit boundaries, parser strictness and OpenFootball/Football-Data agreement, mocked ingestion for Football-Data/FPL/StatsBomb, unmodified-ensemble and learned-home-advantage checks, reproducibility of the stored test report, probability sums, matchday fixture counts and the 20-team/38-match season simulation.
 
 ## Photography and attribution
 

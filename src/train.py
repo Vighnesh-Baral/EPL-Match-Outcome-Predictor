@@ -1,27 +1,36 @@
-"""Train and compare the Version 2 recency-weighted historical models."""
+"""Train and save the production model.
+
+    python -m src.train            # PitchIQ v2.5 production ensemble (default)
+    python -m src.train --legacy   # retrain the archived v2.4 Random Forest + Poisson model
+
+The v2.5 recipe and hyper-parameters are frozen (see reports/v25/); this command only refits them
+on all complete historical seasons and primes ratings with the known 2026/27 results.
+"""
 from __future__ import annotations
+
+import argparse
 import json
-from src.historical_model import train_and_save_model
 
 
-def main() -> int:
-    result = train_and_save_model()
-    metadata = result["metadata"]
-    print("PitchIQ 2.4 model training completed.")
-    print(f"Selected classifier: {metadata['model_name']}")
-    print(f"Training matches: {metadata['training_matches']}")
-    print(f"Training period: {metadata['training_start']} to {metadata['training_end']}")
-    print(f"Ensemble weights: classifier {metadata['ml_probability_weight']:.0%}, Poisson {metadata['poisson_probability_weight']:.0%}")
-    print("\nValidation comparison:")
-    for row in result["validation_comparison"]:
-        print(f"- {row['model']}: log loss {row['validation_blend_log_loss']:.4f}")
-    print("\nUntouched test-period comparison:")
-    for row in result["test_comparison"]:
-        print(f"- {row['model']}: log loss {row['log_loss']:.4f}, Brier {row['brier_score']:.4f}, accuracy {row['accuracy']:.3f}")
-    print("\nSaved model: Models/historical_predictor_v2.joblib")
-    print("Saved reports: reports/model_evaluation_v2.json and reports/model_comparison_v2.csv")
-    return 0
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--legacy", action="store_true", help="retrain the archived v2.4 model instead")
+    args = parser.parse_args()
+    if args.legacy:
+        from src.historical_model import train_and_save_model
+        bundle = train_and_save_model()
+        print(json.dumps(bundle["metadata"], indent=2, default=str)[:2000])
+        return
+    from src.data_loader import load_current_season_results, load_historical_matches
+    from src.data_sources.openfootball import load_openfootball_season
+    from src.engine.production import MODEL_FILE, known_current_results, train_production_engine
+    current = known_current_results(load_openfootball_season("2026-27"), load_current_season_results())
+    bundle = train_production_engine(load_historical_matches(), current)
+    meta = bundle["metadata"]
+    print(f"Saved {MODEL_FILE}")
+    print(f"  version {meta['version']} | members {meta['ensemble_members']}")
+    print(f"  supervised rows {meta['supervised_training_rows']} | state primed with {meta['state_includes_current_season_matches']} known 2026/27 results")
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

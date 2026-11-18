@@ -8,10 +8,10 @@ from src.h2h import get_head_to_head
 from src.historical_model import (
     FEATURE_COLUMNS,
     build_historical_features,
-    load_or_train_model,
     load_historical_matches,
     season_sample_weights,
 )
+from src.engine.production import load_or_train_model
 from src.predict import predict_match
 from src.team_strength import compute_team_strength
 

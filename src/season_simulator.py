@@ -140,6 +140,7 @@ def get_matchday_predictions(matchday: int, strength: pd.DataFrame, form: pd.Dat
             "home_team": row.HomeTeam,
             "away_team": row.AwayTeam,
             "status": row.Status,
+            **{k: v for k, v in prediction.get("fixture", {}).items()},
             "prediction": prediction,
             "confidence_pct": round(max(prediction["probabilities"].values()), 2),
             "probability_margin_pct": prediction_margin,

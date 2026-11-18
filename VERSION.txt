@@ -1,1 +1,1 @@
-PitchIQ 2.4.0
+PitchIQ 2.5.0

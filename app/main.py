@@ -13,11 +13,12 @@ from src.data_loader import load_current_players
 from src.team_strength import compute_team_strength
 from src.h2h import get_head_to_head
 from src.predict import predict_match
-from src.historical_model import load_or_train_model, load_training_matches
+from src.historical_model import load_training_matches
+from src.engine.production import load_or_train_model
 from src.season_simulator import get_matchday_predictions, simulate_final_table, load_remaining_fixtures, build_fixture_prediction_map
 
 STATIC_DIR = Path(__file__).resolve().parent / "static"
-app = FastAPI(title="PitchIQ EPL Predictor", version="2.4.0", description="PitchIQ: validated historical ML, calibrated match probabilities, matchday predictions and Monte Carlo season table forecasts.")
+app = FastAPI(title="PitchIQ EPL Predictor", version="2.5.0", description="PitchIQ v2.5: leakage-safe Elo/Dixon-Coles/ML ensemble, calibrated match probabilities, matchday predictions and Monte Carlo season table forecasts.")
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 app.mount("/assets", StaticFiles(directory=STATIC_DIR / 'assets'), name="assets")
 
@@ -141,12 +142,12 @@ def overview():
             "highest_rated_team": str(strength.iloc[0]["Squad"]),
             "top_rating": float(strength.iloc[0]["Overall_Team_Strength"]),
             "model_type": d["model_bundle"]["metadata"]["ensemble_name"],
-            "training_status": f"Trained on {d['model_bundle']['metadata']['training_matches']} complete historical matches. The partial 2026/27 results log is excluded from supervised fitting and retained for H2H context.",
+            "training_status": f"Models fitted on {d['model_bundle']['metadata']['supervised_training_rows']} complete historical matches (2016/17-2025/26). Ratings are also updated with {d['model_bundle']['metadata']['state_includes_current_season_matches']} known 2026/27 results; the remaining played 2026/27 matches are unavailable at match level and are not imputed.",
             "training_matches": int(d["model_bundle"]["metadata"]["training_matches"]),
             "training_period": f"{d['model_bundle']['metadata']['training_start']} to {d['model_bundle']['metadata']['training_end']}",
             "test_period": "2024/25–2025/26",
             "test_metrics": d["model_bundle"]["metadata"]["test_metrics"],
-            "model_metadata": {k: d["model_bundle"]["metadata"].get(k) for k in ["version", "model_name", "ensemble_name", "ml_probability_weight", "poisson_probability_weight", "home_advantage_factor", "validation_period", "test_period", "test_matches"]},
+            "model_metadata": {k: d["model_bundle"]["metadata"].get(k) for k in ["version", "model_name", "ensemble_name", "ml_probability_weight", "poisson_probability_weight", "home_advantage_factor", "validation_period", "test_period", "test_matches", "ensemble_members", "state_includes_current_season_matches"]},
         }
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc

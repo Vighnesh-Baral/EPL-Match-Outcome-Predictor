@@ -34,7 +34,7 @@ import pandas as pd
 
 SEED_PTS_PER_MATCH = 1.37          # only used until real matches accumulate
 SEED_GOALS_HOME, SEED_GOALS_AWAY = 1.50, 1.20
-SEED_SOT, SEED_SHOTS = 4.3, 12.5
+SEED_SOT = 4.3
 
 
 @dataclass
@@ -91,9 +91,20 @@ FEATURE_GROUPS = {
 assert sorted(sum(FEATURE_GROUPS.values(), [])) == sorted(FEATURE_COLUMNS)
 
 
+def _elo0() -> float:
+    return 1500.0
+
+
+def _zero() -> float:
+    return 0.0
+
+
 def _padded_mean(values: list[float], window: int, prior: float) -> float:
-    """Mean of the last ``window`` values; missing slots filled with ``prior``."""
-    recent = values[-window:]
+    """Mean of the last ``window`` *available* values; remaining slots filled with ``prior``.
+
+    NaN entries (statistics that were not published for a match) are skipped, never imputed.
+    """
+    recent = [v for v in values if not (isinstance(v, float) and math.isnan(v))][-window:]
     missing = window - len(recent)
     return (sum(recent) + missing * prior) / window
 
@@ -101,9 +112,9 @@ def _padded_mean(values: list[float], window: int, prior: float) -> float:
 class FeatureEngine:
     def __init__(self, params: RatingParams | None = None):
         self.params = params or RatingParams()
-        self.elo: dict[str, float] = defaultdict(lambda: 1500.0)
-        self.att: dict[str, float] = defaultdict(float)
-        self.dfn: dict[str, float] = defaultdict(float)
+        self.elo: dict[str, float] = defaultdict(_elo0)
+        self.att: dict[str, float] = defaultdict(_zero)
+        self.dfn: dict[str, float] = defaultdict(_zero)
         self.hist: dict[str, list[dict]] = defaultdict(list)
         self.venue_hist: dict[tuple[str, str], list[dict]] = defaultdict(list)
         self.pair_hist: dict[tuple[str, str], list[dict]] = defaultdict(list)
@@ -111,8 +122,8 @@ class FeatureEngine:
         self.season_teams: set[str] = set()
         self.prev_teams: set[str] = set()
         self.season_mp: dict[str, int] = defaultdict(int)
-        self.season_gf: dict[str, float] = defaultdict(float)
-        self.season_ga: dict[str, float] = defaultdict(float)
+        self.season_gf: dict[str, float] = defaultdict(_zero)
+        self.season_ga: dict[str, float] = defaultdict(_zero)
         self.was_promoted: set[str] = set()
         self.promoted_cohort: list[tuple[float, float]] = []   # (att, def) of promoted clubs' first seasons
         # running league sums (prior results only)
@@ -121,7 +132,7 @@ class FeatureEngine:
         self.sum_away_goals = 0.0
         self.sum_pts = 0.0
         self.sum_sot = 0.0
-        self.sum_shots = 0.0
+        self.n_sot = 0          # team-matches with a published shots-on-target figure
         self.n_team_matches = 0
 
     # ------------------------------------------------------------------ league priors
@@ -133,8 +144,7 @@ class FeatureEngine:
             "goals_home": (self.sum_home_goals + k * SEED_GOALS_HOME) / (n + k),
             "goals_away": (self.sum_away_goals + k * SEED_GOALS_AWAY) / (n + k),
             "ppm": (self.sum_pts + k * SEED_PTS_PER_MATCH) / (nt + k),
-            "sot": (self.sum_sot + k * SEED_SOT) / (nt + k),
-            "shots": (self.sum_shots + k * SEED_SHOTS) / (nt + k),
+            "sot": (self.sum_sot + k * SEED_SOT) / (self.n_sot + k),
         }
 
     # ------------------------------------------------------------------ season handling
@@ -177,8 +187,8 @@ class FeatureEngine:
         self.season_teams = teams
         self.season = season
         self.season_mp = defaultdict(int)
-        self.season_gf = defaultdict(float)
-        self.season_ga = defaultdict(float)
+        self.season_gf = defaultdict(_zero)
+        self.season_ga = defaultdict(_zero)
 
     # ------------------------------------------------------------------ expectations
     def elo_expected_home(self, home: str, away: str) -> float:
@@ -268,8 +278,8 @@ class FeatureEngine:
         s_away = 1.0 - s_home
         pts_h = 3.0 if hg > ag else 1.0 if hg == ag else 0.0
         pts_a = 3.0 if ag > hg else 1.0 if hg == ag else 0.0
-        sot_h = lm["sot"] if hst is None or pd.isna(hst) else float(hst)
-        sot_a = lm["sot"] if ast is None or pd.isna(ast) else float(ast)
+        sot_h = float("nan") if hst is None or pd.isna(hst) else float(hst)
+        sot_a = float("nan") if ast is None or pd.isna(ast) else float(ast)
 
         rec_h = {"date": date, "pts": pts_h, "gf": hg, "ga": ag, "gd": hg - ag,
                  "perf": s_home - e_home, "gdx": (hg - ag) - (lam_h - lam_a), "sot": sot_h, "sota": sot_a}
@@ -303,9 +313,10 @@ class FeatureEngine:
         self.sum_away_goals += ag
         self.n_team_matches += 2
         self.sum_pts += pts_h + pts_a
-        self.sum_sot += sot_h + sot_a
-        self.sum_shots += (SEED_SHOTS if hs is None or pd.isna(hs) else float(hs)) + \
-                          (SEED_SHOTS if as_ is None or pd.isna(as_) else float(as_))
+        for value in (sot_h, sot_a):
+            if not math.isnan(value):
+                self.sum_sot += value
+                self.n_sot += 1
         for team, gf, ga in ((home, hg, ag), (away, ag, hg)):
             self.season_mp[team] += 1
             self.season_gf[team] += gf
