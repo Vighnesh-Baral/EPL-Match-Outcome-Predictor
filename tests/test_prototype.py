@@ -154,9 +154,12 @@ def test_matchday_and_table_pages_are_served():
     matchday = client.get("/matchday")
     table = client.get("/table")
     home = client.get("/")
+    dock_styles = client.get("/static/pitchiq-v24.css")
     assert matchday.status_code == 200 and "matchday-fixtures" in matchday.text
     assert table.status_code == 200 and "table-content" in table.text
-    assert home.status_code == 200 and "pitchiq-v24-dock.js" in home.text
+    assert home.status_code == 200 and "pitchiq-v24-dock.js" not in home.text
+    assert "v24-dock" not in home.text
+    assert dock_styles.status_code == 200 and "v24-dock" not in dock_styles.text
 
 
 def test_matchday_list_contains_every_round_11_to_38():

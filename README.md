@@ -138,7 +138,7 @@ To rebuild the integrated React workspace for FastAPI:
 npm run build
 ```
 
-The production bundle is written to `app/static/`. The Matchday and Table prediction modules are also served directly by FastAPI at `/matchday` and `/table`, and the existing root page has shortcuts to them. These static module pages use the same API endpoints as the React workspace.
+The production bundle is written to `app/static/`. The Matchday and Table prediction modules are also served directly by FastAPI at `/matchday` and `/table`, and the existing workspace sidebar provides navigation to both modules. These static module pages use the same API endpoints as the React workspace.
 
 ## API endpoints
 
